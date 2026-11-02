@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastel sa Daet</title>
@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap-->
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <script src="bootstrap/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap-custom-prefixed.css">
 
@@ -20,24 +20,19 @@
 
    
 </head>
-<body  id="alegreyafontb"> <!-- Id select for font-->
+<body>
     
    <!-- =================================================================================== -->
     <!--Header-->
     <header>
-        <!--Header Announcement-->
-        <div class="container-fluid py-2  text-center bg-secondary">
-            <p class="m-0 text-dark fw-bold">Order ahead and skip the wait. Daily bundle, every day</p>
-        </div>
-        
 
         <!--Navigation Bar-->
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+            <div class="container">
                 <!--Brand Logo and Name-->
                 <a class="navbar-brand fs-3 text-dark fw-bold" href="#">
-                    <img src="image/icon.jpg" alt="Logo" width="60px" height="60px" 
-                    class="d-inline-block align-text-center ms-5 me-2">Pastel sa Daet</a>
+                    <img src="image/icon.jpg" alt="Logo" width="60" height="60" 
+                    class="d-inline-block align-text-center">Pastel sa Daet</a>
 
                 <!-- Humburger button-->
                 <button class="navbar-toggler shadow-none"
@@ -53,7 +48,7 @@
                 
                 <!--SideBar Header-->
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
 
@@ -77,7 +72,7 @@
                     </ul>
 
                     <!--Sign-in and My Order link-->
-                    <div class="d-flex justify-content-center align-items-center me-5">
+                    <div class="d-flex justify-content-center align-items-center">
                         <a href="#" class="text-black btn fw-bold px-3 py-2 rounded-5 text-decoration-none ">Sign-in</a>
                         <a href="#" class="redbutton  btn fw-bold px-4 py-2 rounded-5 text-decoration-none  ">My Orders</a>
                     </div>
@@ -91,70 +86,87 @@
    <!-- ================================================================================= -->
 
     <!--Main-->
-    <main class="container-fluid p-0">
+    <main>
         <!--Home Hero page-->
-        <section class="row bg-warning p-5">
-            <div class="col-6 my-5">
-                <badge class=" bg-secondary text-dark rounded p-1 ">
-                    <span class="fs-4">•</span>  Pastil sa Daet · since 2023
-                </badge>
-                
-                <div class="titlebar">
-                    <h1 class="my-4">Pastil made fresh, ready when you are.</h1>
-                    <p class="text-white">Order ahead for pick-up, dine in at our shop, or get it delivered through our partner apps.</p>
-                </div>
+        <section class="bg-warning py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <span class="badge bg-secondary text-dark rounded p-1 ">
+                            <span class="fs-4">•</span>  Pastil sa Daet · since 2023
+                        </span>
+                        
+                        <div class="titlebar">
+                            <h1 class="my-4 hero-title">Pastil made fresh, ready when you are.</h1>
+                            <p class="text-white">Order ahead for pick-up, dine in at our shop, or get it delivered through our partner apps.</p>
+                        </div>
 
-                <div class="titlebutton mt-5">
-                    <a href="#" class="greenbutton btn fw-bold px-3 py-2 rounded-5 text-decoration-none   mx-2">Orders ahead</a>
-                    <a href="#" class="stmbutton btn fw-bold px-3 py-2 rounded-5 text-decoration-none   ">See the menu</a>
+                        <div class="hero-btn mb-4">
+                            <a href="#" class="greenbutton btn fw-bold px-3 py-2 rounded-5 text-decoration-none ">Orders ahead</a>
+                            <a href="#" class="stmbutton btn fw-bold px-3 py-2 rounded-5 text-decoration-none   ">See the menu</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12">
+                        <img class="rounded hero-img" src="image/photoplaceholder.png" alt="RealPhoto" >
+                    </div>
                 </div>
-                
             </div>
-            <div class="col-6">
-                <img src="image/photoplaceholder.png" alt="RealPhoto" height="460px" width="618px" class="rounded">
-            </div>
+
         </section>
 
         <!--Home feature strip page-->
-        <section class="featurestrip row px-5 pt-4 mx-5">
-            <div class=" col-4 d-flex">         
-                <img src="image/circle.png" alt="circle" height="20px" width="20px">
-                <p class="m-0"><b>Dine-in & take-out</b><br><span class="text-grey">Eat in our shop or grab it to go.</span></p>
+        <section class="py-4">
+            <div class="container px-lg-5">
+                <div class="row px-lg-4">
+                    <div class="col-lg-4 ">
+                        <div class="d-flex gap-2">
+                            <img src="image/circle.png" alt="circle" height="20" width="20">
+                            <p class="m-0 "><b>Dine-in & take-out</b><br><span class="text-grey">Eat in our shop or grab it to go.</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="d-flex gap-2">
+                            <img src="image/triangle.png" alt="triangle" height="20" width="20">
+                            <p class="m-0"><b>Delivery via partners</b><br><span class="text-grey">Order on our partner delivery apps.</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="d-flex gap-2">
+                            <img src="image/square.png" alt="square" height="20" width="20">
+                            <p class="m-0"><b>Daily bundle</b><br><span class="text-grey">A bundle promo, every single day.</span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class=" col-4 d-flex">
-                <img src="image/triangle.png" alt="triangle" height="20px" width="20px">
-                <p><b>Delivery via partners</b><br><span class="text-grey">Order on our partner delivery apps.</span></p>
-            </div>
-
-            <div class=" col-4 d-flex">
-                <img src="image/square.png" alt="square" height="20px" width="20px">
-                <p><b>Daily bundle</b><br><span class="text-grey">A bundle promo, every single day.</span></p>
-            </div>
         </section>
         <hr>
 
         <!--Home Student favorates  page-->
-        <section class="sfavorates row p-5 mx-5">
-            <!--Student Header-->
-            <div class="col-12 px-5">
-                <div class="sfheader d-flex justify-content-between align-items-center">
-                    <h2 class="fw-bold">Customer favorites</h2>
-                    <a href="#" class="greenbutton vfmenu btn fw-bold px-4 py-2 rounded-5 text-decoration-none  ">View full menu</a>
+        <section class="py-5">
+            <div class="container">
+                <div class="row px-lg-4">
+                    <!--Student Header-->
+                    <div class="col-lg-12 px-lg-5">
+                        <div class="sfheader d-flex justify-content-between align-items-center">
+                            <h2 class="fw-bold text-start">Customer favorites</h2>
+                            <a href="#" class="d-none d-sm-none d-lg-block greenbutton vfmenu btn fw-bold px-4 py-2 rounded-5 text-decoration-none  ">View full menu</a>
+                        </div>
+                        
+                    </div>
                 </div>
                 
-            </div>
-
-            <!--Student Cards-->
-            <div class="col-12 px-5 pt-5">
-                <div class="sfgrid row">
-                    <div class=" col-4">
-                        <div class="card">
-                            <img class="card-img-top rounded-5 p-3" src="image/photoplaceholder.png" alt="Realphoto" width="100%" height="200px"/>
-                            <div class="card-body">
-                                
-                                <badge class="bg-secondary text-dark rounded py-1 px-2">● Best seller</badge>
-                                <h4 class="card-title fw-bold mt-2">Pastil</h4>
+                    <!--Student Cards-->
+                   
+                <div class="row py-lg-4 px-lg-5">
+                    <div class=" col-lg-4 p-2">
+                        <div class="card occupied">
+                            <img class="card-img-top rounded-3" src="image/photoplaceholder.png" alt="Realphoto" >
+                            <div class="card-body p-0 pt-2">
+                                <span class="badge bg-secondary text-dark rounded py-1">● Best seller</span>
+                                <h3 class="card-title fw-bold mt-2">Pastil</h3>
                                 <p class="card-text text-grey">Our signature dish and best seller.</p>
                             </div>
                             <div class="pricerow d-flex justify-content-between align-items-center px-3 my-2">
@@ -163,13 +175,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-4">
-                        <div class="card">
-                            <img class="card-img-top rounded-5 p-3" src="image/photoplaceholder.png" alt="Realphoto" width="100%" height="200px"/>
-                            <div class="card-body">
-                                
-                                <badge class=" bg-warning text-white rounded py-1 px-2 mb-2">■ Daily promo</badge>
-                                <h4 class="card-title fw-bold mt-2">Daily bundle</h4>
+
+                    <div class=" col-lg-4 p-2">
+                        <div class="card occupied">
+                            <img class="card-img-top rounded-3" src="image/photoplaceholder.png" alt="Realphoto" >
+                            <div class="card-body p-0 pt-2">
+                                        
+                                <span class="badge bg-warning text-white rounded py-1 px-2 mb-2">■ Daily promo</span>
+                                <h3 class="card-title fw-bold mt-2">Daily bundle</h3>
                                 <p class="card-text text-grey">Our bundle promo, offered every day.</p>
                             </div>
                             <div class="pricerow d-flex justify-content-between align-items-center px-3 my-2">
@@ -178,11 +191,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-4">
+                    <div class=" col-lg-4 p-2">
                         <div class="card">
-                            <img class="card-img-top rounded-5 p-3" src="image/photoplaceholder.png" alt="Realphoto" width="100%" height="200px"/>
-                            <div class="card-body">
-                                <h4 class="card-title fw-bold">[Menu item]</h4>
+                            <img class="card-img-top rounded-3" src="image/photoplaceholder.png" alt="Realphoto">
+                            <div class="card-body p-0 pt-2">
+                                <h3 class="card-title fw-bold">[Menu item]</h3>
                                 <p class="card-text text-grey">[Add description]</p>
                             </div>
                             <div class="pricerow d-flex justify-content-between align-items-center px-3 my-2">
@@ -192,60 +205,63 @@
                         </div>
                     </div>
                 </div>
+                <a href="#" class="d-block d-lg-none d-sm-block greenbutton vfmenu btn fw-bold px-4 py-2 mt-3 rounded-5 text-decoration-none  ">View full menu</a>
             </div>
+
         </section>
         
-        <section class="todaybundle row bg-secondary d-flex align-items-center p-5">
-            <div class="col-6 ps-4 d-flex justify-content-center ">
-                <img class="rounded " src="image/photoplaceholder.png" alt="RealPhoto" width="530px" height="300px">
-            </div>
-            <div class="col-6">
-                <h2 class="fw-bold">Today's bundle</h2>
-                <p>Our bundle promo is offered every day. Ask for today’s bundle or order it ahead.</p>
-                <a class="redbutton tbundle btn fw-bold px-4 py-2 rounded-5 text-decoration-none" href="#">Order the bundle</a>
+        <section class=" bg-secondary py-5">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center px-lg-5">
+                    <div class="col-lg-6 p-lg-2">
+                        <img class="rounded todaybundle-img" src="image/photoplaceholder.png">
+                    </div>
+                    <div class="col-lg-6 pt-3 pt-lg-0 px-lg-5">
+                        <h2 class="fw-bold">Today's bundle</h2>
+                        <p>Our bundle promo is offered every day. Ask for today’s bundle or order it ahead.</p>
+                        <a class="redbutton tbundle btn fw-bold px-4 py-2 rounded-5 text-decoration-none" href="#">Order the bundle</a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!--Order ahead steps-->
-        <section class="bg-whitegreen row p-5">
-            <div class="container px-5">
-                <div class="row">
-                    <div class="col-12 mx-5">
+        <section class="bg-whitegreen py-5">
+            <div class="container">
+                <div class="row px-lg-5">
+                    <div class="col-lg-12">
                         <h2 class="fw-bold ">Order ahead in three steps</h2>
-                        <p class="text-grey">Skip the wait. Choose your items, set a pick-up time, and we’ll have it ready.</p>
+                        <p class="text-grey m-0">Skip the wait. Choose your items, set a pick-up time, and we’ll have it ready.</p>
+                    </div>
+                </div>
+
+                <div class="row py-4 px-lg-5">
+                    <div class="col-lg-4 p-2 d-flex align-self-stretch">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="badge oasbadge bg-secondary text-dark  rounded-circle">1</span>
+                                <h5 class="card-title fw-bold mt-3"> Choose your pastil</h5>
+                                <p class="text-grey">Pick your pastil, the daily bundle, or add-ons from the menu.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-12 ">
-
-                        <div class="row p-2 mx-4">
-                            <div class="col-4 d-flex align-self-stretch">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <badge class="oasbadge bg-secondary text-dark  rounded-circle py-2 px-3">1</badge>
-                                        <h5 class="card-title fw-bold mt-3"> Choose your pastil</h5>
-                                        <p class="text-grey">Pick your pastil, the daily bundle, or add-ons from the menu.</p>
-                                    </div>
-                                </div>
+                    <div class="col-lg-4 p-2 d-flex align-self-stretch">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="badge oasbadge bg-secondary text-dark  rounded-circle">2</span>
+                                <h5 class="card-title fw-bold mt-3"> Set a time that fits your day</h5>
+                                <p class="text-grey">Choose a pick-up time that suits you so your order is ready when you arrive.</p>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="col-4 d-flex align-self-stretch">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <badge class="oasbadge bg-secondary text-dark  rounded-circle py-2 px-3">2</badge>
-                                        <h5 class="card-title fw-bold mt-3"> Set a time that fits your day</h5>
-                                        <p class="text-grey">Choose a pick-up time that suits you so your order is ready when you arrive.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-4 d-flex align-self-stretch">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <badge class="oasbadge bg-secondary text-dark  rounded-circle py-2 px-3">3</badge>
-                                        <h5 class="card-title fw-bold mt-3">Pick up, dine in, or get it delivered</h5>
-                                        <p class="text-grey">Take-out and dine-in at our shop. For delivery, order through our partner apps.</p>
-                                    </div>
-                                </div>
+                    <div class="col-lg-4 p-2 d-flex align-self-stretch">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="badge oasbadge bg-secondary text-dark  rounded-circle">3</span>
+                                <h5 class="card-title fw-bold mt-3">Pick up, dine in, or get it delivered</h5>
+                                <p class="text-grey">Take-out and dine-in at our shop. For delivery, order through our partner apps.</p>
                             </div>
                         </div>
                     </div>
@@ -254,17 +270,18 @@
         </section>
 
         <!--Home Pastil story page-->
-        <section class="row pr-5 pl-0 py-5 ms-5">
-            <div class="container ps-5">
-                <div class="row ">
-                    <div class="col-6 p-5">
-                        <badge class="bg-secondary text-dark rounded py-1 px-2">● Best seller</badge> 
-                        <h2 class="fw-bold my-3 ml-0">Pastil, our first and still our favorite</h2>
-                        <p class="text-grey my-2 ml-0">We started in 2023 with just pastil, and it is still the dish our customers come back for. We have since expanded our space so more of you can dine in.</p>
-                        <a class="redbutton tbundle btn fw-bold px-4 py-2 my-3 rounded-5 text-decoration-none" href="#">Add pastil to my order</a>
+        <section class="py-5">
+            <div class="container">
+                <div class="row px-lg-5">
+                    <div class="col-lg-6">
+                        <img class="rounded home-story d-block d-lg-none" src="image/photoplaceholder.png" alt="Realphoto" >
+                        <span class="badge bg-secondary text-dark rounded py-1 px-2 mt-4">● Best seller</span> 
+                        <h2 class="fw-bold my-3 ms-0">Pastil, our first and still our favorite</h2>
+                        <p class="text-grey my-2 ms-0">We started in 2023 with just pastil, and it is still the dish our customers come back for. We have since expanded our space so more of you can dine in.</p>
+                        <a class="redbutton tbundle btn fw-bold px-4 py-2 my-2 rounded-5 text-decoration-none" href="#">Add pastil to my order</a>
                     </div>
-                    <div class="col-6 ps-5">
-                        <img src="image/photoplaceholder.png" alt="Realphoto" class="rounded" width="530px" height="340px">
+                    <div class="col-lg-6">
+                        <img class="rounded home-story d-none d-lg-block" src="image/photoplaceholder.png" alt="Realphoto" >
                     </div>
                 </div>
             </div>
@@ -272,59 +289,12 @@
             
         </section>
 
-        <!--Home Reviews Page-->
-        <section class="row bg-whitegreen p-5">
-            <div class="container px-5">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="fw-bold py-4 px-5">What customers say</h2>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="row mx-5">
-                            <div class="col-4 p-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="card-img-top"><img src="image/rectangle.png" alt="rectangle" width="50px" height="10px"></div>
-                                        <h5 class="card-title">“[Add a real customer review here]”</h5>
-                                        <p class="card-text text-grey">[Name or initials, with permission]</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="card-img-top"><img src="image/rectangle.png" alt="rectangle" width="50px" height="10px"></div>
-                                        <h5 class="card-title">“[Add a real customer review here]”</h5>
-                                        <p class="card-text text-grey">[Name or initials, with permission]</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-4 p-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="card-img-top"><img src="image/rectangle.png" alt="rectangle" width="50px" height="10px"></div>
-                                        <h5 class="card-title">“[Add a real customer review here]”</h5>
-                                        <p class="card-text text-grey">[Name or initials, with permission]</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
         <!--Home Visit us page-->
-        <section class="row p-5">
-            <div class="container px-5">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="card mx-5">
+        <section class=" py-5">
+            <div class="container">
+                <div class="row px-lg-5">
+                    <div class="col-lg-6">
+                        <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title fw-bold">Visit Us</h4>
                                 <p class="card-text text-grey m-0">Address</p>
@@ -341,9 +311,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 ps-4">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d592.8006834145576!2d122.9557893481202!3d14.109057498396417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1793367032269!5m2!1sen!2sph" 
-                        width="600px" height="400px" style="border:1.2px solid #FFFFFF;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="rounded"></iframe>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <iframe class="rounded visit-us-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d592.8006834145576!2d122.9557893481202!3d14.109057498396417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1793367032269!5m2!1sen!2sph" 
+                         style="border:1.2px solid #FFFFFF;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
                     </div>
                 </div>
             </div>
@@ -351,50 +321,55 @@
         </section>
 
         <!--Home FAQ page-->
-        <section class="row p-5">
-            <div class="col-12 px-5">
-                <h2 class="fw-bold ">Frequently asked questions</h2>
-                <div class="accordion accordion-flush">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faq-heading-one">
-                        <button class="accordion-button text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-one" aria-expanded="true" aria-controls="faq-one">
-                            Can I order ahead for pick-up?
-                        </button>
-                        </h2>
-                        <div id="faq-one" class="accordion-collapse collapse show" aria-labelledby="faq-heading-one">
-                        <div class="accordion-body text-grey">
-                            Yes. Choose your items, set a pick-up time that fits your schedule, and we’ll have your order ready.
-                        </div>
-                        </div>
-                    </div>
+        <section class=" py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 px-5">
+                        <h2 class="fw-bold ">Frequently asked questions</h2>
+                        <div class="accordion accordion-flush">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-heading-one">
+                                <button class="accordion-button text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-one" aria-expanded="true" aria-controls="faq-one">
+                                    Can I order ahead for pick-up?
+                                </button>
+                                </h2>
+                                <div id="faq-one" class="accordion-collapse collapse show" aria-labelledby="faq-heading-one">
+                                <div class="accordion-body text-grey">
+                                    Yes. Choose your items, set a pick-up time that fits your schedule, and we’ll have your order ready.
+                                </div>
+                                </div>
+                            </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faq-heading-two">
-                        <button class="accordion-button collapsed text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-two" aria-expanded="false" aria-controls="faq-two">
-                            Do you deliver?
-                        </button>
-                        </h2>
-                        <div id="faq-two" class="accordion-collapse collapse" aria-labelledby="faq-heading-two">
-                        <div class="accordion-body text-grey">
-                            Yes
-                        </div>
-                        </div>
-                    </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-heading-two">
+                                <button class="accordion-button collapsed text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-two" aria-expanded="false" aria-controls="faq-two">
+                                    Do you deliver?
+                                </button>
+                                </h2>
+                                <div id="faq-two" class="accordion-collapse collapse" aria-labelledby="faq-heading-two">
+                                <div class="accordion-body text-grey">
+                                    Yes
+                                </div>
+                                </div>
+                            </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faq-heading-three">
-                        <button class="accordion-button collapsed text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-three" aria-expanded="false" aria-controls="faq-three">
-                            What is the daily bundle?
-                        </button>
-                        </h2>
-                        <div id="faq-three" class="accordion-collapse collapse" aria-labelledby="faq-heading-three">
-                        <div class="accordion-body text-grey">
-                            Di ko rin alam, ikaw alam mo?    
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq-heading-three">
+                                <button class="accordion-button collapsed text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-three" aria-expanded="false" aria-controls="faq-three">
+                                    What is the daily bundle?
+                                </button>
+                                </h2>
+                                <div id="faq-three" class="accordion-collapse collapse" aria-labelledby="faq-heading-three">
+                                <div class="accordion-body text-grey">
+                                    Di ko rin alam, ikaw alam mo?    
+                                </div>
+                                </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
+                    </div>                    
                 </div>
             </div>
+
         </section>
 
     </main>
@@ -406,7 +381,7 @@
         <div class="row">
             <div class="col-9">
                 <h5 class="text-white">
-                    <img src="image/icon.jpg" alt="Icon" height="40px" width="40px" class="rounded-circle">
+                    <img src="image/icon.jpg" alt="Icon" height="40" width="40" class="rounded-circle">
                      Pastel sa Daet
                 </h5>
                 <p class="text-white">Serving students in Daet since 2023.</p>
@@ -436,3 +411,4 @@
    <!-- =========================================== -->
 
 </body>
+</html>
