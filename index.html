@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastel sa Daet</title>
+    <title>Pastil sa Daet</title>
 
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
 
+    <!--Google icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <!-- Bootstrap-->
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <script src="bootstrap/bootstrap.min.js"></script>
@@ -24,15 +26,15 @@
     
    <!-- =================================================================================== -->
     <!--Header-->
-    <header>
+    <header class="bg-white shadow-sm sticky-top">
 
         <!--Navigation Bar-->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container">
                 <!--Brand Logo and Name-->
                 <a class="navbar-brand fs-3 text-dark fw-bold" href="#">
                     <img src="image/icon.jpg" alt="Logo" width="60" height="60" 
-                    class="d-inline-block align-text-center">Pastel sa Daet</a>
+                    class="d-inline-block align-text-center">Pastil sa Daet</a>
 
                 <!-- Humburger button-->
                 <button class="navbar-toggler shadow-none"
@@ -53,23 +55,29 @@
                 </div>
 
                 <!--SideBar Body-->
-                <div class="offcanvas-body">
+                <div class="offcanvas-body d-flex align-items-center">
 
                     <!--Navigation Links-->
                     <ul class="navbar-nav justify-content-start flex-grow-1 ps-5 ">
-                        <li class="nav-item p-2 m-2">
+                        <li class="nav-item py-2">
                             <a class="nav-link active text-dark fw-bold border-bottom border-4 border-secondary" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item p-2 m-2">
+                        <li class="nav-item py-2 ">
                             <a class="nav-link text-grey " href="#">Menu & Order</a>
                         </li>
-                        <li class="nav-item p-2 m-2">
+                        <li class="nav-item py-2 ">
                             <a class="nav-link text-grey" href="#">About us</a>
                         </li>
-                        <li class="nav-item p-2 m-2">
+                        <li class="nav-item py-2 ">
                             <a class="nav-link text-grey" href="#">Contact</a>
                         </li>
                     </ul>
+
+                    <!--Search bar-->
+                    <form class="search-bar">
+                        <span class="material-symbols-outlined search-icon">search</span>
+                        <input class="form-control search-input" type="search" placeholder="Search menu, orders, or help..." aria-label="Search menu, orders, or help...">
+                    </form>
 
                     <!--Sign-in and My Order link-->
                     <div class="d-flex justify-content-center align-items-center">
@@ -321,10 +329,10 @@
         </section>
 
         <!--Home FAQ page-->
-        <section class=" py-5">
+        <section class="py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 px-5">
+                    <div class="col-lg-12 px-5">
                         <h2 class="fw-bold ">Frequently asked questions</h2>
                         <div class="accordion accordion-flush">
                             <div class="accordion-item">
@@ -377,34 +385,39 @@
    <!-- ====================================================================================== -->
 
     <!--Footer-->
-   <footer class="container-fluid bg-dark p-5">
-        <div class="row">
-            <div class="col-9">
-                <h5 class="text-white">
-                    <img src="image/icon.jpg" alt="Icon" height="40" width="40" class="rounded-circle">
-                     Pastel sa Daet
-                </h5>
-                <p class="text-white">Serving students in Daet since 2023.</p>
-            </div>
-            <div class="col-3">
-                <div class="row ">
-                     <ul class="col-6 d-flex flex-column">
-                        <li><a href="#" class="footer-link active">Explore</a></li>
-                        <li><a href="#" class="footer-link ">Home</a></li>
-                        <li><a href="#" class="footer-link ">Menu & Order</a></li>
-                        <li><a href="#" class="footer-link ">About us</a></li>
-                        <li><a href="#" class="footer-link ">News & Promos</a></li>
-                    </ul>
-                    <ul class="col-6 d-flex flex-column">
-                        <li><a href="#" class="footer-link active">Help</a></li>
-                        <li><a href="#" class="footer-link ">Contact</a></li>
-                        <li><a href="#" class="footer-link ">FAQ</a></li>
-                        <li><a href="#" class="footer-link ">Privacy Policy</a></li>
-                    </ul>
+    <footer class="bg-dark py-4">
+        <div class="container-fluid ">
+            <div class="row px-lg-5">
+                <div class="col-lg-9">
+                    <h5 class="text-white">
+                        <img src="image/icon.jpg" alt="Icon" height="40" width="40" class="rounded-circle">
+                        Pastel sa Daet
+                    </h5>
+                    <p class="text-grey">Serving students in Daet since 2023.</p>
                 </div>
+                <div class="col-lg-3">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <ul class="col-6">
+                                <li><a href="#" class="footer-link active">Explore</a></li>
+                                <li><a href="#" class="footer-link text-grey">Home</a></li>
+                                <li><a href="#" class="footer-link text-grey">Menu & Order</a></li>
+                                <li><a href="#" class="footer-link text-grey">About us</a></li>
+                                <li><a href="#" class="footer-link text-grey">News & Promos</a></li>
+                            </ul>
+                            <ul class="col-6">
+                                <li><a href="#" class="footer-link active">Help</a></li>
+                                <li><a href="#" class="footer-link text-grey">Contact</a></li>
+                                <li><a href="#" class="footer-link text-grey">FAQ</a></li>
+                                <li><a href="#" class="footer-link text-grey">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <hr class="text-white mt-2">
+                <div class="col-lg-12" ><p class="text-grey fw-light">© 2026 Pastil sa Daet. All rights reserved.</p></div>
             </div>
-            <hr class="text-white mt-2">
-            <div class="col-12" ><p class="text-white fw-light">© 2026 Pastil sa Daet. All rights reserved.</p></div>
         </div>
    </footer>
 
