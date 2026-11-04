@@ -34,7 +34,7 @@
                 <!--Brand Logo and Name-->
                 <a class="navbar-brand fs-3 text-dark fw-bold" href="#">
                     <img src="image/icon.jpg" alt="Logo" width="60" height="60" 
-                    class="d-inline-block align-text-center">Pastil sa Daet</a>
+                    class="d-inline-block align-text-center me-2">Pastil sa Daet</a>
 
                 <!-- Humburger button-->
                 <button class="navbar-toggler shadow-none"
@@ -49,43 +49,53 @@
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 
                 <!--SideBar Header-->
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <div class="offcanvas-header border-bottom mx-3 p-0">
+                    <a class="navbar-brand fs-3 text-dark fw-bold" href="#">
+                    <img src="image/icon.jpg" alt="Logo" width="50" height="50" 
+                    class="d-inline-block align-text-center me-2">Pastil sa Daet</a>
+
+                    <!--Search bar-->
+                    <form class="search-bar off-can">
+                        <span class="material-symbols-outlined search-icon">search</span>
+                        <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
                 </div>
 
+                
+
                 <!--SideBar Body-->
-                <div class="offcanvas-body d-flex align-items-center">
+                <div class="offcanvas-body">
 
                     <!--Navigation Links-->
-                    <ul class="navbar-nav justify-content-start flex-grow-1 ps-5 ">
-                        <li class="nav-item py-2">
-                            <a class="nav-link active text-dark fw-bold border-bottom border-4 border-secondary" aria-current="page" href="#">Home</a>
+                    <ul class="navbar-nav justify-content-center alig-items-center ps-lg-5 ">
+                        <li class="nav-item ">
+                            <a class="nav-link my-lg-0 my-sm-2 px-3 py-2 btn active text-dark fw-bold" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item py-2 ">
-                            <a class="nav-link text-grey " href="#">Menu & Order</a>
+                        <li class="nav-item ">
+                            <a class="nav-link my-lg-0 my-sm-2 px-3 py-2 text-grey " href="#">Menu & Order</a>
                         </li>
-                        <li class="nav-item py-2 ">
-                            <a class="nav-link text-grey" href="#">About us</a>
+                        <li class="nav-item  ">
+                            <a class="nav-link my-lg-0 my-sm-2 px-3 py-2 text-grey" href="#">About us</a>
                         </li>
-                        <li class="nav-item py-2 ">
-                            <a class="nav-link text-grey" href="#">Contact</a>
+                        <li class="nav-item  ">
+                            <a class="nav-link my-lg-0 my-sm-2 px-3 py-2 text-grey" href="#">Contact</a>
                         </li>
                     </ul>
 
                     <!--Search bar-->
-                    <form class="search-bar">
+                    <form class="search-bar d-none  d-none d-lg-flex">
                         <span class="material-symbols-outlined search-icon">search</span>
                         <input class="form-control search-input" type="search" placeholder="Search menu, orders, or help..." aria-label="Search menu, orders, or help...">
                     </form>
 
                     <!--Sign-in and My Order link-->
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="text-black btn fw-bold px-3 py-2 rounded-5 text-decoration-none ">Sign-in</a>
+                    <div class="d-flex flex-lg-row flex-sm-column">
+                        <a href="#" class="nav-link text-black btn fw-bold ms-lg-5 my-lg-0 my-2 px-3 py-2 rounded-5 text-decoration-none ">Sign-in</a>
                         <a href="#" class="redbutton  btn fw-bold px-4 py-2 rounded-5 text-decoration-none  ">My Orders</a>
                     </div>
-                </div>
-
                 </div>
             </div>
         </nav>
