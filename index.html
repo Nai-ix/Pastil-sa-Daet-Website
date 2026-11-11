@@ -36,7 +36,7 @@
                     <img src="image/icon.jpg" alt="Logo" class="me-2 icon d-inline-block align-text-center ">Pastil sa Daet</a>
 
                 <!-- Humburger button-->
-                <button class="navbar-toggler shadow-none"
+                <button class="navbar-toggler shadow-none border border-2 border-dark"
                 type="button" data-bs-toggle="offcanvas" 
                 data-bs-target="#offcanvasNavbar" 
                 aria-controls="offcanvasNavbar" 
@@ -47,31 +47,37 @@
                 <!-- SideBar-->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 
-                    <!--SideBar Header-->
+                    <!--SideBar Header in sidebar-->
                     <div class="offcanvas-header border-bottom mx-3 p-0">
                         <a class="navbar-brand fs-3 text-dark fw-bold" href="#">
                         <img src="image/icon.jpg" alt="Logo" width="50" height="50" 
                         class="d-inline-block align-text-center">Pastil sa Daet</a>
 
                         <!--Search bar-->
-                        <form class="search-bar off-can">
+                        <form class="search-bar off-can me-3">
                             <span class="material-symbols-outlined search-icon">search</span>
-                            <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+                            <input class="form-control search-input " type="search" placeholder="Search" aria-label="Search">
                         </form>
 
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <!-- Sidebar close button-->
+                        <button type="button" class="btn-close border border-2 border-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
                     </div>
 
                     
 
                     <!--SideBar Body-->
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row px-5 pb-5">
+
+                         <div class="d-lg-none d-flex justify-content-between align-items-center mb-3">
+                            <h1 class="fw-bold">Navigation</h1>
+                            <p class="my-2 text-grey">You're on Home</p>
+                        </div>
 
                         <!--Navigation Links-->
-                        <ul class="navbar-nav justify-content-center align-items-center">
-                            <li class="nav-item ">
-                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn active text-dark fw-bold" aria-current="page" href="#">Home</a>
+                        <ul class="navbar-nav justify-content-center align-items-stretch">
+                            <li class="nav-item d-flex flex-column">
+                                <a class="nav-link text-nowrap my-lg-0 my-2 px-3 py-1 btn active text-dark fw-bold" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn text-grey " href="#">Menu & Order</a>
@@ -84,16 +90,21 @@
                             </li>
                         </ul>
 
-                        <!-- Search-bar, Sign-in, and My Order link-->
-                        <div class="d-flex gap-3 flex-lg-row flex-column ms-xxl-2 ">
+                        <hr class="d-block d-lg-none">                        <!-- Search-bar, Sign-in, and My Order link-->
+                        <div class="d-flex gap-lg-3 flex-lg-row flex-column ms-xxl-5 ">
 
                             <!--Search bar-->
-                            <form class="search-bar d-none  d-none d-lg-flex" role="search">
+                            <form class="search-bar d-none d-lg-flex" role="search">
                                 <span class="material-symbols-outlined search-icon">search</span>
-                                <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search menu, orders, or help...">
+                                <input class="form-control search-input " type="search" placeholder="Search" aria-label="Search menu, orders, or help...">
                             </form>
                             <a href="#" class="nav-link sign-in-btn text-nowrap text-black btn fw-bold my-lg-0 my-2 px-3 py-1 rounded-5 text-decoration-none ">Sign-in</a>
-                            <a href="#" class="redbutton text-nowrap btn fw-bold px-4 py-1 rounded-5 text-decoration-none  ">My Orders</a>
+                            <a href="#" class="redbutton myorder-btn text-nowrap btn fw-bold px-4 py-1 rounded-5 text-decoration-none  ">My Orders</a>
+
+                       </div>
+                        <div class="d-lg-none d-flex flex-column justify-content-center align-items-center mt-auto">
+                            <img src="image/redpill.png" alt="redpill" width="35" height="7">
+                            <p class="my-2 text-grey">Serving Daet since 2023.</p>
                         </div>
                     </div>
                 </div>
@@ -110,8 +121,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
-                        <span class="badge bg-secondary text-dark rounded p-1 ">
-                            <span class="fs-4">•</span>  Pastil sa Daet · since 2023
+                        <span class="badge bg-secondary text-dark rounded ">
+                           <p class="m-0"><span class="fs-4">•</span>  Pastil sa Daet · since 2023</p>
                         </span>
                         
                         <div class="titlebar">

@@ -13,6 +13,8 @@ body{
   color: #FFFFFF;
 }
 
+
+
 .redbutton:hover{
   box-shadow:  0px 1px 10px 0px #F05252;
   background-color: #FFFFFF;
@@ -166,16 +168,17 @@ iframe.visit-us-map{
 }
 
 .nav-link{
-  box-shadow: inset 0px 20px 30px 0px  #DCF9A456;
+  box-shadow: inset 0px 20px 30px 0px  #DCF9A456, 0px 5px 10px 0px  #11182725;
   border: 1.2px solid #96999F95;
   background-color: #E4FBBA73;
   border-radius: 30px;
   margin-right:10px;
+  margin-bottom: 10px;
 }
 
 
 .nav-link.sign-in-btn{
-  box-shadow: inset 0px 20px 30px 0px  #DCF9A456;
+  box-shadow: inset 0px 20px 30px 0px  #DCF9A456, 0px 5px 10px 0px  #11182725;
   border: 1.2px solid #96999F95;
   background-color: #E4FBBA73;
   border-radius: 30px;
@@ -183,19 +186,25 @@ iframe.visit-us-map{
 }
 
 .nav-link:hover{
-  box-shadow: inset 0px 10px 20px 0px  #A3E635F2;
+  box-shadow: inset 0px 10px 20px 0px  #A3E635F2,  0px 10px 20px 0px  #64a30d67;
   border: 1.2px solid #96999F95;
   background-color: #D9F99DA6;
   border-radius: 30px;
 }
 
 .nav-link.active{
-  box-shadow: inset 0px 10px 20px 0px  #A3E635F2;
+  box-shadow: inset 0px 10px 20px 0px  #A3E635F2, 0px 10px 20px 0px  #64a30d67;
   border: 1.2px solid #96999F95;
   background-color: #D9F99DA6;
   border-radius: 30px;
 }
 
+.redbutton.myorder-btn{
+  box-shadow: inset 0px 20px 40px 0px  #F05252, 0px 10px 20px 0px  #B81A1A61;
+  border: 1.2px solid #FFFFFF;
+  background-color: #b91c1c;
+  color: #FFFFFF;
+}
 .search-bar{
   display: flex;
   width: clamp(100px, 10vw, 270px);
