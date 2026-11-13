@@ -28,14 +28,25 @@ const backToTop = document.querySelector(".back-to-top");
 
 if (backToTop) {
     const navbarOffcanvas = document.querySelector("#offcanvasNavbar");
+    const deliveryAppsLink = document.querySelector(".delivery-apps-link");
     let isOffcanvasOpen = false;
 
     const updateBackToTopVisibility = () => {
-        const shouldHide = window.scrollY < 200 || isOffcanvasOpen;
+        let deliveryLinkInBottomZone = false;
+
+        if (deliveryAppsLink && window.innerWidth <= 720) {
+            const deliveryLinkBounds = deliveryAppsLink.getBoundingClientRect();
+            deliveryLinkInBottomZone =
+                deliveryLinkBounds.bottom > window.innerHeight - 72 &&
+                deliveryLinkBounds.top < window.innerHeight;
+        }
+
+        const shouldHide = window.scrollY < 200 || isOffcanvasOpen || deliveryLinkInBottomZone;
         backToTop.classList.toggle("d-none", shouldHide);
     };
 
     window.addEventListener("scroll", updateBackToTopVisibility, { passive: true });
+    window.addEventListener("resize", updateBackToTopVisibility, { passive: true });
 
     if (navbarOffcanvas) {
         navbarOffcanvas.addEventListener("show.bs.offcanvas", () => {
