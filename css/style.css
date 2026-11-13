@@ -92,19 +92,19 @@ html{
 /* Title Header */
 h1.hero-title{
   font-weight: bold;
-  font-size: clamp(36px,3.542vw,68px);
+  font-size: clamp(2.25rem, 3.542vw, 4.25rem);
   color: #FFFFFF;
 }
 
 /* Hero Badge */
 .badge{
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
 }
 
 .badge.oasbadge{
   border: 1.2px solid #111827;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
 }
 
 
@@ -125,8 +125,8 @@ li{
 
 .border-grey{
   border-color: #4B5563;
-  margin-left:20px;
-  margin-right:20px;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
   opacity: 0.10;
   border-width: 2px;
 }
@@ -151,57 +151,57 @@ li{
 
 img.hero-img{
   width: 100%;
-  height: clamp(220px,46vh,460px);
+  height: clamp(13.75rem, 46vh, 28.75rem);
 }
 
 img.todaybundle-img{
   width: 100%;
-  height: clamp(200px,30vh,300px);
+  height: clamp(12.5rem, 30vh, 18.75rem);
 }
 
 img.home-story{
   width: 100%;
-  height: clamp(220px,34vh,340px);
+  height: clamp(13.75rem, 34vh, 21.25rem);
 }
 
 iframe.visit-us-map{
   width: 100%;
-  height: clamp(220px,40vh,400px);
+  height: clamp(13.75rem, 40vh, 25rem);
 }
 
 .card{
   width: 100%;
   height: auto;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .card.occupied{
   width: 100%;
-  height: clamp(337.4px, 35.04vh, 350.4px);
+  height: clamp(21.0875rem, 35.04vh, 21.9rem);
 
 }
 
 .card-img-top{
   width: 100%;
-  height: clamp(150px,16vh,160px);
+  height: clamp(9.375rem, 16vh, 10rem);
 }
 
 .card-title{
-  font-size: clamp(18px,1.5vw,24px);
+  font-size: clamp(1.125rem, 1.5vw, 1.5rem);
 }
 
 .hero-btn{
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .nav-link{
   box-shadow: inset 0px 20px 30px 0px  #DCF9A456, 0px 5px 10px 0px  #11182725;
   border: 1.2px solid #96999F95;
   background-color: #E4FBBA73;
-  border-radius: 30px;
-  margin-right:10px;
-  margin-bottom: 10px;
+  border-radius: 1.875rem;
+  margin-right: 0.625rem;
+  margin-bottom: 0.625rem;
 }
 
 
@@ -209,7 +209,7 @@ iframe.visit-us-map{
   box-shadow: inset 0px 20px 30px 0px  #DCF9A456, 0px 5px 10px 0px  #11182725;
   border: 1.2px solid #96999F95;
   background-color: #E4FBBA73;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   margin:0px;
 }
 
@@ -217,14 +217,14 @@ iframe.visit-us-map{
   box-shadow: inset 0px 10px 20px 0px  #A3E635F2,  0px 10px 20px 0px  #64a30d67;
   border: 1.2px solid #96999F95;
   background-color: #D9F99DA6;
-  border-radius: 30px;
+  border-radius: 1.875rem;
 }
 
 .nav-link.active{
   box-shadow: inset 0px 10px 20px 0px  #A3E635F2, 0px 10px 20px 0px  #64a30d67;
   border: 1.2px solid #96999F95;
   background-color: #D9F99DA6;
-  border-radius: 30px;
+  border-radius: 1.875rem;
 }
 
 .redbutton.myorder-btn{
@@ -235,34 +235,34 @@ iframe.visit-us-map{
 }
 .search-bar{
   display: flex;
-  width: clamp(100px, 10vw, 270px);
+  width: clamp(6.25rem, 10vw, 16.875rem);
   align-items: center;
-  padding: 1px 12px;
-  border-radius: 30px;
+  padding: 1px 0.75rem;
+  border-radius: 1.875rem;
   border: 1.2px solid #28AE3F;
   box-shadow: 0px 1px 2px 1px #1118273c;
 }
 
 .search-icon{
   color: #28AE3F;
-  font-size: 20.5px;
+  font-size: 1.28125rem;
 
 }
 
 .search-input{
-  font-size: 14px;
+  font-size: 0.875rem;
   outline: none;
   border: none;
-  padding-left: 4px;
+  padding-left: 0.25rem;
   padding-right:0;
 }
 
 .search-bar.off-can{
   display: flex;
-  width: 136px;
+  width: 8.5rem;
   align-items: center;
-  padding: 1px 12px;
-  border-radius: 30px;
+  padding: 1px 0.75rem;
+  border-radius: 1.875rem;
   border: 1.2px solid #28AE3F;
   box-shadow: 0px 1px 2px 1px #1118273c;
 }
@@ -273,17 +273,17 @@ iframe.visit-us-map{
 
 img.icon{
   width: clamp(20px, 4.5vw, 45px);
-  height: clamp(28,4.8vh, 48px);
+  height: auto;
 }
 
 @media (min-width: 1200px){
   
 .search-bar{
   display: flex;
-  width: 270px;
+  width: 16.875rem;
   align-items: center;
-  padding: 1px 12px;
-  border-radius: 30px;
+  padding: 1px 0.75rem;
+  border-radius: 1.875rem;
   border: 1.2px solid #28AE3F;
   box-shadow: 0px 1px 2px 1px #1118273c;
 }
