@@ -22,3 +22,32 @@ categoryFilters.forEach((filter) => {
         emptyState.hidden = visibleCount > 0;
     });
 });
+
+// Show the back-to-top link after the visitor scrolls down the page.
+const backToTop = document.querySelector(".back-to-top");
+
+if (backToTop) {
+    const navbarOffcanvas = document.querySelector("#offcanvasNavbar");
+    let isOffcanvasOpen = false;
+
+    const updateBackToTopVisibility = () => {
+        const shouldHide = window.scrollY < 200 || isOffcanvasOpen;
+        backToTop.classList.toggle("d-none", shouldHide);
+    };
+
+    window.addEventListener("scroll", updateBackToTopVisibility, { passive: true });
+
+    if (navbarOffcanvas) {
+        navbarOffcanvas.addEventListener("show.bs.offcanvas", () => {
+            isOffcanvasOpen = true;
+            updateBackToTopVisibility();
+        });
+
+        navbarOffcanvas.addEventListener("hidden.bs.offcanvas", () => {
+            isOffcanvasOpen = false;
+            updateBackToTopVisibility();
+        });
+    }
+
+    updateBackToTopVisibility();
+}
