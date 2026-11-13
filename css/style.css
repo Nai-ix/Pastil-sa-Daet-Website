@@ -286,7 +286,7 @@ iframe.visit-us-map{
 
 .card.occupied{
   width: 100%;
-  height: clamp(337.4px, 35.04vh, 350.4px);
+  min-height: clamp(337.4px, 35.04vh, 350.4px);
 
 }
 

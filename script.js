@@ -32,16 +32,26 @@ if (backToTop) {
     let isOffcanvasOpen = false;
 
     const updateBackToTopVisibility = () => {
-        let deliveryLinkInBottomZone = false;
+        let overlapsDeliveryLink = false;
 
-        if (deliveryAppsLink && window.innerWidth <= 720) {
+        if (deliveryAppsLink) {
+            const backToTopWasHidden = backToTop.classList.contains("d-none");
+            backToTop.classList.remove("d-none");
+            const backToTopBounds = backToTop.getBoundingClientRect();
+
+            if (backToTopWasHidden) {
+                backToTop.classList.add("d-none");
+            }
+
             const deliveryLinkBounds = deliveryAppsLink.getBoundingClientRect();
-            deliveryLinkInBottomZone =
-                deliveryLinkBounds.bottom > window.innerHeight - 72 &&
-                deliveryLinkBounds.top < window.innerHeight;
+            overlapsDeliveryLink =
+                deliveryLinkBounds.left < backToTopBounds.right &&
+                deliveryLinkBounds.right > backToTopBounds.left &&
+                deliveryLinkBounds.top < backToTopBounds.bottom &&
+                deliveryLinkBounds.bottom > backToTopBounds.top;
         }
 
-        const shouldHide = window.scrollY < 200 || isOffcanvasOpen || deliveryLinkInBottomZone;
+        const shouldHide = window.scrollY < 200 || isOffcanvasOpen || overlapsDeliveryLink;
         backToTop.classList.toggle("d-none", shouldHide);
     };
 
