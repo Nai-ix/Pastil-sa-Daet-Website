@@ -50,6 +50,26 @@ html{
   color: #111827;
 }
 
+.greenbutton-filter{
+  box-shadow: inset 0px 15px 30px 0px #FFFFFF;
+  border: 1.2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  color: #111827;
+}
+
+.greenbutton-filter:hover{
+  box-shadow: 0px 1px 10px 0px #E3FBB3;
+  background-color: #F7FEE7;
+  color: #111827;
+}
+
+.btn-check:checked + .greenbutton-filter{
+  box-shadow: inset 0px 15px 30px 0px #E3FBB3;
+  border: 1.2px solid #FFFFFF;
+  background-color: #A3E635;
+  color: #111827;
+}
+
 .greenbutton:hover{
   box-shadow: 0px 1px 10px 0px #FFFFFF;
   background-color: rgba(255, 255, 255, 0.16);
@@ -92,19 +112,19 @@ html{
 /* Title Header */
 h1.hero-title{
   font-weight: bold;
-  font-size: clamp(2.25rem, 3.542vw, 4.25rem);
+  font-size: clamp(36px,3.542vw,68px);
   color: #FFFFFF;
 }
 
 /* Hero Badge */
 .badge{
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: bold;
 }
 
 .badge.oasbadge{
   border: 1.2px solid #111827;
-  padding: 0.75rem 1rem;
+  padding: 12px 16px;
 }
 
 
@@ -125,8 +145,8 @@ li{
 
 .border-grey{
   border-color: #4B5563;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  margin-left:20px;
+  margin-right:20px;
   opacity: 0.10;
   border-width: 2px;
 }
@@ -151,22 +171,22 @@ li{
 
 img.hero-img{
   width: 100%;
-  height: clamp(13.75rem, 46vh, 28.75rem);
+  height: clamp(220px,46vh,460px);
 }
 
 img.todaybundle-img{
   width: 100%;
-  height: clamp(12.5rem, 30vh, 18.75rem);
+  height: clamp(200px,30vh,300px);
 }
 
 img.home-story{
   width: 100%;
-  height: clamp(13.75rem, 34vh, 21.25rem);
+  height: clamp(220px,34vh,340px);
 }
 
 iframe.visit-us-map{
   width: 100%;
-  height: clamp(13.75rem, 40vh, 25rem);
+  height: clamp(220px,40vh,400px);
 }
 
 .card{
@@ -177,17 +197,22 @@ iframe.visit-us-map{
 
 .card.occupied{
   width: 100%;
-  height: clamp(21.0875rem, 35.04vh, 21.9rem);
+  height: clamp(337.4px, 35.04vh, 350.4px);
 
 }
 
 .card-img-top{
   width: 100%;
-  height: clamp(9.375rem, 16vh, 10rem);
+  height: clamp(150px,16vh,160px);
+}
+
+.card-img-top.menu{
+  width: 100%;
+  height: clamp(160px,19.4vh,194px);
 }
 
 .card-title{
-  font-size: clamp(1.125rem, 1.5vw, 1.5rem);
+  font-size: clamp(18px,1.5vw,24px);
 }
 
 .hero-btn{
@@ -199,9 +224,9 @@ iframe.visit-us-map{
   box-shadow: inset 0px 20px 30px 0px  #DCF9A456, 0px 5px 10px 0px  #11182725;
   border: 1.2px solid #96999F95;
   background-color: #E4FBBA73;
-  border-radius: 1.875rem;
-  margin-right: 0.625rem;
-  margin-bottom: 0.625rem;
+  border-radius: 30px;
+  margin-right:10px;
+  margin-bottom: 10px;
 }
 
 
@@ -209,7 +234,7 @@ iframe.visit-us-map{
   box-shadow: inset 0px 20px 30px 0px  #DCF9A456, 0px 5px 10px 0px  #11182725;
   border: 1.2px solid #96999F95;
   background-color: #E4FBBA73;
-  border-radius: 1.875rem;
+  border-radius: 30px;
   margin:0px;
 }
 
@@ -217,14 +242,14 @@ iframe.visit-us-map{
   box-shadow: inset 0px 10px 20px 0px  #A3E635F2,  0px 10px 20px 0px  #64a30d67;
   border: 1.2px solid #96999F95;
   background-color: #D9F99DA6;
-  border-radius: 1.875rem;
+  border-radius: 30px;
 }
 
 .nav-link.active{
   box-shadow: inset 0px 10px 20px 0px  #A3E635F2, 0px 10px 20px 0px  #64a30d67;
   border: 1.2px solid #96999F95;
   background-color: #D9F99DA6;
-  border-radius: 1.875rem;
+  border-radius: 30px;
 }
 
 .redbutton.myorder-btn{
@@ -235,34 +260,34 @@ iframe.visit-us-map{
 }
 .search-bar{
   display: flex;
-  width: clamp(6.25rem, 10vw, 16.875rem);
+  width: clamp(100px, 10vw, 270px);
   align-items: center;
-  padding: 1px 0.75rem;
-  border-radius: 1.875rem;
+  padding: 1px 12px;
+  border-radius: 30px;
   border: 1.2px solid #28AE3F;
   box-shadow: 0px 1px 2px 1px #1118273c;
 }
 
 .search-icon{
   color: #28AE3F;
-  font-size: 1.28125rem;
+  font-size: 20.5px;
 
 }
 
 .search-input{
-  font-size: 0.875rem;
+  font-size: 14px;
   outline: none;
   border: none;
-  padding-left: 0.25rem;
+  padding-left: 4px;
   padding-right:0;
 }
 
 .search-bar.off-can{
   display: flex;
-  width: 8.5rem;
+  width: 136px;
   align-items: center;
-  padding: 1px 0.75rem;
-  border-radius: 1.875rem;
+  padding: 1px 12px;
+  border-radius: 30px;
   border: 1.2px solid #28AE3F;
   box-shadow: 0px 1px 2px 1px #1118273c;
 }
@@ -280,10 +305,10 @@ img.icon{
   
 .search-bar{
   display: flex;
-  width: 16.875rem;
+  width: 270px;
   align-items: center;
-  padding: 1px 0.75rem;
-  border-radius: 1.875rem;
+  padding: 1px 12px;
+  border-radius: 30px;
   border: 1.2px solid #28AE3F;
   box-shadow: 0px 1px 2px 1px #1118273c;
 }

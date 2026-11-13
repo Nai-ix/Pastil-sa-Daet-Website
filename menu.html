@@ -52,7 +52,7 @@
                         class="d-inline-block align-text-center">Pastil sa Daet</a>
 
                         <!-- Mobile search -->
-                        <form class="search-bar off-can me-3">
+                        <form class="search-bar off-can me-lg-3 ">
                             <span class="material-symbols-outlined search-icon">search</span>
                             <input class="form-control search-input " type="search" placeholder="Search" aria-label="Search">
                         </form>
@@ -137,26 +137,26 @@
                             <legend class="visually-hidden">Filter menu by category</legend>
                             <div class="d-flex flex-wrap gap-2" role="group" aria-label="Menu categories">
                                 <input class="btn-check" type="radio" name="menu-category" id="category-all" value="all" autocomplete="off" checked>
-                                <label class="btn btn-outline-success rounded-pill px-3" for="category-all">All</label>
+                                <label class="btn greenbutton-filter rounded-pill px-3 fw-bold" for="category-all">All</label>
 
                                 <input class="btn-check" type="radio" name="menu-category" id="category-pastil" value="pastil" autocomplete="off">
-                                <label class="btn btn-outline-success rounded-pill px-3" for="category-pastil">Pastil</label>
+                                <label class="btn greenbutton-filter rounded-pill px-3 fw-bold" for="category-pastil">Pastil</label>
 
                                 <input class="btn-check" type="radio" name="menu-category" id="category-bundles" value="bundles" autocomplete="off">
-                                <label class="btn btn-outline-success rounded-pill px-3" for="category-bundles">Bundles</label>
+                                <label class="btn greenbutton-filter rounded-pill px-3 fw-bold" for="category-bundles">Bundles</label>
 
                                 <input class="btn-check" type="radio" name="menu-category" id="category-drinks" value="drinks" autocomplete="off">
-                                <label class="btn btn-outline-success rounded-pill px-3" for="category-drinks">Drinks</label>
+                                <label class="btn greenbutton-filter rounded-pill px-3 fw-bold" for="category-drinks">Drinks</label>
 
                                 <input class="btn-check" type="radio" name="menu-category" id="category-add-ons" value="add-ons" autocomplete="off">
-                                <label class="btn btn-outline-success rounded-pill px-3" for="category-add-ons">Add-ons</label>
+                                <label class="btn greenbutton-filter rounded-pill px-3 fw-bold" for="category-add-ons">Add-ons</label>
                             </div>
                         </fieldset>
                         <!-- Product list: each data-category must match a filter value above. -->
                         <div class="row g-3" id="menu-items">
                             <div class="menu-item col-12 col-md-6" data-category="pastil">
                                 <article class="card occupied h-100">
-                                    <img class="card-img-top rounded-3" src="image/photoplaceholder.png" alt="Pastil meal">
+                                    <img class="card-img-top rounded-3 menu" src="image/photoplaceholder.png" alt="Pastil meal">
                                     <div class="card-body p-0 pt-2">
                                         <span class="badge bg-secondary text-dark rounded py-1">● Best seller</span>
                                         <h2 class="card-title fw-bold mt-2">Pastil</h2>
@@ -170,42 +170,40 @@
                             </div>
                             <div class="menu-item col-12 col-md-6" data-category="pastil">
                                 <article class="card occupied h-100">
-                                    <img class="card-img-top rounded-3" src="image/photoplaceholder.png" alt="Pastil meal">
+                                    <img class="card-img-top rounded-3 menu" src="image/photoplaceholder.png" alt="Pastil meal">
                                     <div class="card-body p-0 pt-2">
-                                        <span class="badge bg-secondary text-dark rounded py-1">● Best seller</span>
-                                        <h2 class="card-title fw-bold mt-2">Pastil</h2>
-                                        <p class="card-text text-grey">Our signature dish and best seller.</p>
+                                        <span class="badge bg-warning text-white rounded py-1 px-2 mb-2">■ Daily promo</span>
+                                        <h3 class="card-title fw-bold mt-2">Daily bundle</h3>
+                                        <p class="card-text text-grey">Our bundle promo, offered every day.</p>
                                     </div>
                                     <div class="pricerow d-flex justify-content-between align-items-center px-3 my-2">
-                                        <p class="fw-bold m-0">₱29</p>
+                                        <p class="fw-bold m-0">₱69</p>
                                         <button type="button" class="greenbutton add btn fw-bold px-3 py-2 rounded-5">Add</button>
                                     </div>
                                 </article>
                             </div>
                             <div class="menu-item col-12 col-md-6" data-category="pastil">
                                 <article class="card occupied h-100">
-                                    <img class="card-img-top rounded-3" src="image/photoplaceholder.png" alt="Pastil meal">
+                                    <img class="card-img-top rounded-3 menu" src="image/photoplaceholder.png" alt="Pastil meal">
                                     <div class="card-body p-0 pt-2">
-                                        <span class="badge bg-secondary text-dark rounded py-1">● Best seller</span>
-                                        <h2 class="card-title fw-bold mt-2">Pastil</h2>
-                                        <p class="card-text text-grey">Our signature dish and best seller.</p>
+                                        <h2 class="card-title fw-bold mt-2">Pastil Duo</h2>
+                                        <p class="card-text text-grey">[Add drink options]</p>
                                     </div>
                                     <div class="pricerow d-flex justify-content-between align-items-center px-3 my-2">
-                                        <p class="fw-bold m-0">₱29</p>
+                                        <p class="fw-bold m-0">₱55</p>
                                         <button type="button" class="greenbutton add btn fw-bold px-3 py-2 rounded-5">Add</button>
                                     </div>
                                 </article>
                             </div>
                             <div class="menu-item col-12 col-md-6" data-category="pastil">
                                 <article class="card occupied h-100">
-                                    <img class="card-img-top rounded-3" src="image/photoplaceholder.png" alt="Pastil meal">
+                                    <img class="card-img-top rounded-3 menu" src="image/photoplaceholder.png" alt="Pastil meal">
                                     <div class="card-body p-0 pt-2">
-                                        <span class="badge bg-secondary text-dark rounded py-1">● Best seller</span>
-                                        <h2 class="card-title fw-bold mt-2">Pastil</h2>
-                                        <p class="card-text text-grey">Our signature dish and best seller.</p>
+                                        <h2 class="card-title fw-bold mt-2">Pastil with Egg</h2>
+                                        <p class="card-text text-grey">[Add extra options]</p>
                                     </div>
                                     <div class="pricerow d-flex justify-content-between align-items-center px-3 my-2">
-                                        <p class="fw-bold m-0">₱29</p>
+                                        <p class="fw-bold m-0">₱39</p>
                                         <button type="button" class="greenbutton add btn fw-bold px-3 py-2 rounded-5">Add</button>
                                     </div>
                                 </article>
