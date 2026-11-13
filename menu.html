@@ -33,6 +33,12 @@
                 <a class="navbar-brand text-dark fw-bold me-xl-5" href="#">
                     <img src="image/icon.jpg" alt="Logo" class="me-2 icon d-inline-block align-text-center ">Pastil sa Daet</a>
 
+                <!-- Compact search shown beside the brand on mobile. -->
+                <form class="search-bar mobile-header-search d-lg-none" role="search">
+                    <span class="material-symbols-outlined search-icon">search</span>
+                    <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search menu">
+                </form>
+
                 <!-- Mobile menu toggle -->
                 <button class="navbar-toggler shadow-none border border-2 border-dark"
                 type="button" data-bs-toggle="offcanvas" 
@@ -118,7 +124,7 @@
     <main>
 
         <!-- Page title and ordering prompt -->
-        <section class="bg-warning py-5">
+        <section class="bg-warning py-4">
             <div class="container">
                 <div class="row">
                     <h1 class="text-primary fw-bold">Menu & Order</h1>
@@ -215,21 +221,31 @@
                         </div>
                     </div>
 
-                    <!-- Order form: service choice and customer pickup details -->
+                    <!-- Order form layout based on the supplied menu mockup. -->
                     <aside class="col-12 col-lg-4" aria-labelledby="order-heading">
-                        <form class="card border border-2 border-dark p-3">
-                            <h2 id="order-heading" class="h5 fw-bold">Your order</h2>
+                        <form class="card order-form p-3 p-md-4">
+                            <h2 id="order-heading" class="order-title fw-bold mb-3">Your order</h2>
+                            <section class="order-summary mb-3" aria-label="Order items">
+                                <div class="order-item">
+                                    <span>Pastil × 2</span>
+                                    <span>₱58</span>
+                                </div>
+                                <div class="order-item">
+                                    <span>Daily bundle × 1</span>
+                                    <span>₱69</span>
+                                </div>
+                            </section>
                             <!-- Radio buttons let the customer choose a service type. -->
                             <fieldset class="mb-3">
                                 <legend class="h6 fw-bold">Service</legend>
                                 <div class="d-flex flex-wrap gap-2">
                                     <div>
                                         <input class="btn-check" type="radio" name="service" id="service-takeout" value="takeout" checked>
-                                        <label for="service-takeout" class="greenbutton add btn fw-bold px-3 rounded-5">Take-out</label>
+                                        <label for="service-takeout" class="btn service-choice px-3 rounded-pill">Take-out</label>
                                     </div>
                                     <div>
                                         <input class="btn-check" type="radio" name="service" id="service-dine-in" value="dine-in">
-                                        <label for="service-dine-in" class="whitebutton add btn fw-bold px-3 rounded-5">Dine-in</label>
+                                        <label for="service-dine-in" class="btn service-choice px-3 rounded-pill">Dine-in</label>
                                     </div>
                                 </div>
                             </fieldset>
@@ -244,8 +260,15 @@
                             </div>
                             <div class="mb-3">
                                 <label for="pick-up-time" class="form-label fw-bold">Pick-up time</label>
-                                <input class="form-control" type="time" id="pick-up-time" name="pickup-time" required>
+                                <input class="form-control" type="time" id="pick-up-time" name="pickup-time" value="12:30" required>
                             </div>
+                            <div class="order-total d-flex justify-content-between align-items-center mb-3">
+                                <span>Total</span>
+                                <span>₱127</span>
+                            </div>
+                            <button type="button" class="btn redbutton myorder-btn rounded-pill w-100 mb-3">Place order</button>
+                            <p class="delivery-apps-copy text-grey mb-3">Prefer delivery? We deliver through partner apps.</p>
+                            <a href="index.html#delivery-apps" class="btn greenbutton vfmenu delivery-apps-link rounded-pill w-100 text-decoration-none">See delivery apps</a>
                         </form>
                     </aside>
                 </div>

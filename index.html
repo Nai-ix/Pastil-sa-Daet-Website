@@ -33,6 +33,12 @@
                 <a class="navbar-brand text-dark fw-bold me-xl-5" href="#">
                     <img src="image/icon.jpg" alt="Logo" class="me-2 icon d-inline-block align-text-center ">Pastil sa Daet</a>
 
+                <!-- Compact search shown beside the brand on mobile. -->
+                <form class="search-bar mobile-header-search d-lg-none" role="search">
+                    <span class="material-symbols-outlined search-icon">search</span>
+                    <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search menu">
+                </form>
+
                 <!-- Mobile menu toggle -->
                 <button class="navbar-toggler shadow-none border border-2 border-dark"
                 type="button" data-bs-toggle="offcanvas" 
@@ -332,7 +338,7 @@
                                 <p class="card-text ">[Opening hours: to be confirmed with the owner]</p>
                                 <p class="card-text text-grey m-0">Services</p>
                                 <p class="card-text ">Dine-in · Take-out · Delivery through partner apps</p>
-                                <div class="card-button d-flex flex-column">
+                                <div class="card-button d-flex flex-column" id="delivery-apps">
                                     <a href="#" class="greenbutton vfmenu btn fw-bold px-4 py-2 m-2 rounded-5 text-decoration-none  ">Get directions</a>
                                     <a href="#" class="greenbutton vfmenu btn fw-bold px-4 py-2 m-2 rounded-5 text-decoration-none  ">Order on [Delivery partner 1]</a>
                                     <a href="#" class="greenbutton vfmenu btn fw-bold px-4 py-2 m-2 rounded-5 text-decoration-none  ">Order on [Delivery partner 2]</a>
