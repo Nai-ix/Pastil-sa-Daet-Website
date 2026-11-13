@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastil sa Daet</title>
+
+    <!-- External fonts and icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+
+    <!-- Bootstrap framework and page scripts -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/bootstrap-custom-prefixed.css">
+
+    <!-- Shared site styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+<body id="top">
+    
+    <!-- Site header and responsive navigation -->
+    <header class="bg-white shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <!-- Brand logo and name -->
+                <a class="navbar-brand text-dark fw-bold me-xl-5" href="#">
+                    <img src="image/icon.jpg" alt="Logo" class="me-2 icon d-inline-block align-text-center ">Pastil sa Daet</a>
+
+                <!-- Mobile menu toggle -->
+                <button class="navbar-toggler shadow-none border border-2 border-dark"
+                type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar" 
+                aria-controls="offcanvasNavbar" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Offcanvas navigation panel -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                
+                    <!-- Offcanvas header with brand, mobile search, and close control -->
+                    <div class="offcanvas-header border-bottom mx-3 p-0">
+                        <a class="navbar-brand fs-3 text-dark fw-bold" href="#">
+                        <img src="image/icon.jpg" alt="Logo" width="50" height="50" 
+                        class="d-inline-block align-text-center">Pastil sa Daet</a>
+
+                        <!-- Mobile search -->
+                        <form class="search-bar off-can me-3">
+                            <span class="material-symbols-outlined search-icon">search</span>
+                            <input class="form-control search-input " type="search" placeholder="Search" aria-label="Search">
+                        </form>
+
+                        <!-- Close the offcanvas panel -->
+                        <button type="button" class="btn-close border border-2 border-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                    </div>
+
+                    
+
+                    <!-- Offcanvas navigation and account actions -->
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row px-5 pb-5 pb-lg-0">
+
+                        <!-- Mobile-only page indicator -->
+                         <div class="d-lg-none d-flex justify-content-between align-items-center mb-3">
+                            <h1 class="fw-bold">Navigation</h1>
+                            <p class="my-2 text-grey">You're on Menu &amp; Order</p>
+                        </div>
+
+                        <!-- Main page navigation -->
+                        <ul class="navbar-nav justify-content-center align-items-stretch">
+                            <li class="nav-item d-flex flex-column">
+                                <a class="nav-link text-nowrap my-lg-0 my-2 px-3 py-1 btn text-dark fw-bold" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn active text-grey" aria-current="page" href="menu.html">Menu &amp; Order</a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn text-grey" href="#">About us</a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn text-grey" href="#">Contact</a>
+                            </li>
+                        </ul>
+
+                        <hr class="d-block d-lg-none">
+                        <!-- Search, sign-in, and order links -->
+                        <div class="d-flex gap-lg-3 flex-lg-row flex-column ms-xxl-5 ">
+
+                            <!-- Desktop search -->
+                            <form class="search-bar d-none d-lg-flex" role="search">
+                                <span class="material-symbols-outlined search-icon">search</span>
+                                <input class="form-control search-input " type="search" placeholder="Search" aria-label="Search menu, orders, or help...">
+                            </form>
+                            <a href="#" class="nav-link sign-in-btn text-nowrap text-black btn fw-bold my-lg-0 my-2 px-3 py-1 rounded-5 text-decoration-none ">Sign-in</a>
+                            <a href="#" class="redbutton myorder-btn text-nowrap btn fw-bold px-4 py-1 rounded-5 text-decoration-none  ">My Orders</a>
+
+                       </div>
+
+                        <!-- Mobile-only service note -->
+                        <div class="d-lg-none d-flex flex-column justify-content-center align-items-center mt-auto">
+                            <img src="image/redpill.png" alt="redpill" width="35" height="7">
+                            <p class="my-2 text-grey">Serving Daet since 2023.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menu page content -->
+    <main>
+
+        <!-- Page title and ordering prompt -->
+        <section class="bg-warning py-5">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-primary fw-bold">Menu & Order</h1>
+                    <p class="text-primary">Order ahead and pick it up when it suits you.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product categories, cards, and order form -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-12 col-lg-8">
+                        <!-- Category radio buttons are read by script.js. -->
+                        <fieldset class="mb-3">
+                            <legend class="visually-hidden">Filter menu by category</legend>
+                            <div class="d-flex flex-wrap gap-2" role="group" aria-label="Menu categories">
+                                <input class="btn-check" type="radio" name="menu-category" id="category-all" value="all" autocomplete="off" checked>
+                                <label class="btn btn-outline-success rounded-pill px-3" for="category-all">All</label>
+
+                                <input class="btn-check" type="radio" name="menu-category" id="category-pastil" value="pastil" autocomplete="off">
+                                <label class="btn btn-outline-success rounded-pill px-3" for="category-pastil">Pastil</label>
+
+                                <input class="btn-check" type="radio" name="menu-category" id="category-bundles" value="bundles" autocomplete="off">
+                                <label class="btn btn-outline-success rounded-pill px-3" for="category-bundles">Bundles</label>
+
+                                <input class="btn-check" type="radio" name="menu-category" id="category-drinks" value="drinks" autocomplete="off">
+                                <label class="btn btn-outline-success rounded-pill px-3" for="category-drinks">Drinks</label>
+
+                                <input class="btn-check" type="radio" name="menu-category" id="category-add-ons" value="add-ons" autocomplete="off">
+                                <label class="btn btn-outline-success rounded-pill px-3" for="category-add-ons">Add-ons</label>
+                            </div>
+                        </fieldset>
+                        <!-- Product list: each data-category must match a filter value above. -->
+                        <div class="row g-3" id="menu-items">
+                            <div class="menu-item col-12 col-md-6" data-category="pastil">
+                                <article class="card occupied h-100">
+                                    <img class="card-img-top rounded-3" src="image/photoplaceholder.png" alt="Pastil meal">
+                                    <div class="card-body p-0 pt-2">
+                                        <span class="badge bg-secondary text-dark rounded py-1">● Best seller</span>
+                                        <h2 class="card-title fw-bold mt-2">Pastil</h2>
+                                        <p class="card-text text-grey">Our signature dish and best seller.</p>
+                                    </div>
+                                    <div class="pricerow d-flex justify-content-between align-items-center px-3 my-2">
+                                        <p class="fw-bold m-0">₱29</p>
+                                        <button type="button" class="greenbutton add btn fw-bold px-3 py-2 rounded-5">Add</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="menu-item col-12 col-md-6" data-category="pastil">
+                                <article class="card occupied h-100">
+                                    <img class="card-img-top rounded-3" src="image/photoplaceholder.png" alt="Pastil meal">
+                                    <div class="card-body p-0 pt-2">
+                                        <span class="badge bg-secondary text-dark rounded py-1">● Best seller</span>
+                                        <h2 class="card-title fw-bold mt-2">Pastil</h2>
+                                        <p class="card-text text-grey">Our signature dish and best seller.</p>
+                                    </div>
+                                    <div class="pricerow d-flex justify-content-between align-items-center px-3 my-2">
+                                        <p class="fw-bold m-0">₱29</p>
+                                        <button type="button" class="greenbutton add btn fw-bold px-3 py-2 rounded-5">Add</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="menu-item col-12 col-md-6" data-category="pastil">
+                                <article class="card occupied h-100">
+                                    <img class="card-img-top rounded-3" src="image/photoplaceholder.png" alt="Pastil meal">
+                                    <div class="card-body p-0 pt-2">
+                                        <span class="badge bg-secondary text-dark rounded py-1">● Best seller</span>
+                                        <h2 class="card-title fw-bold mt-2">Pastil</h2>
+                                        <p class="card-text text-grey">Our signature dish and best seller.</p>
+                                    </div>
+                                    <div class="pricerow d-flex justify-content-between align-items-center px-3 my-2">
+                                        <p class="fw-bold m-0">₱29</p>
+                                        <button type="button" class="greenbutton add btn fw-bold px-3 py-2 rounded-5">Add</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="menu-item col-12 col-md-6" data-category="pastil">
+                                <article class="card occupied h-100">
+                                    <img class="card-img-top rounded-3" src="image/photoplaceholder.png" alt="Pastil meal">
+                                    <div class="card-body p-0 pt-2">
+                                        <span class="badge bg-secondary text-dark rounded py-1">● Best seller</span>
+                                        <h2 class="card-title fw-bold mt-2">Pastil</h2>
+                                        <p class="card-text text-grey">Our signature dish and best seller.</p>
+                                    </div>
+                                    <div class="pricerow d-flex justify-content-between align-items-center px-3 my-2">
+                                        <p class="fw-bold m-0">₱29</p>
+                                        <button type="button" class="greenbutton add btn fw-bold px-3 py-2 rounded-5">Add</button>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Empty state shown when no products match the selected category. -->
+                            <p id="menu-empty-state" class="col-12 text-center text-grey py-3" role="status" aria-live="polite" hidden>
+                                No items are available in this category yet.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Order form: service choice and customer pickup details -->
+                    <aside class="col-12 col-lg-4" aria-labelledby="order-heading">
+                        <form class="card border border-2 border-dark p-3">
+                            <h2 id="order-heading" class="h5 fw-bold">Your order</h2>
+                            <!-- Radio buttons let the customer choose a service type. -->
+                            <fieldset class="mb-3">
+                                <legend class="h6 fw-bold">Service</legend>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <div>
+                                        <input class="btn-check" type="radio" name="service" id="service-takeout" value="takeout" checked>
+                                        <label for="service-takeout" class="greenbutton add btn fw-bold px-3 rounded-5">Take-out</label>
+                                    </div>
+                                    <div>
+                                        <input class="btn-check" type="radio" name="service" id="service-dine-in" value="dine-in">
+                                        <label for="service-dine-in" class="whitebutton add btn fw-bold px-3 rounded-5">Dine-in</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <!-- Customer contact and pickup information -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-bold">Name</label>
+                                <input class="form-control" type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mobile-num" class="form-label fw-bold">Mobile number</label>
+                                <input class="form-control" type="tel" id="mobile-num" name="mobile" placeholder="09XX XXX XXXX" autocomplete="tel" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pick-up-time" class="form-label fw-bold">Pick-up time</label>
+                                <input class="form-control" type="time" id="pick-up-time" name="pickup-time" required>
+                            </div>
+                        </form>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="bg-dark py-4">
+        <div class="container-fluid ">
+            <div class="row px-lg-5">
+                <!-- Footer brand and service note -->
+                <div class="col-lg-9">
+                    <h5 class="text-white">
+                        <img src="image/icon.jpg" alt="Icon" height="40" width="40" class="rounded-circle">
+                        Pastil sa Daet
+                    </h5>
+                    <p class="text-grey">Serving students in Daet since 2023.</p>
+                </div>
+                <!-- Footer navigation links -->
+                <div class="col-lg-3">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <ul class="col-6">
+                                <li><a href="#" class="footer-link active">Explore</a></li>
+                                <li><a href="#" class="footer-link text-grey">Home</a></li>
+                                <li><a href="#" class="footer-link text-grey">Menu & Order</a></li>
+                                <li><a href="#" class="footer-link text-grey">About us</a></li>
+                                <li><a href="#" class="footer-link text-grey">News & Promos</a></li>
+                            </ul>
+                            <ul class="col-6">
+                                <li><a href="#" class="footer-link active">Help</a></li>
+                                <li><a href="#" class="footer-link text-grey">Contact</a></li>
+                                <li><a href="#" class="footer-link text-grey">FAQ</a></li>
+                                <li><a href="#" class="footer-link text-grey">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Copyright notice -->
+                <hr class="text-white mt-2">
+                <div class="col-lg-12" ><p class="text-grey fw-light">© 2026 Pastil sa Daet. All rights reserved.</p></div>
+            </div>
+        </div>
+   </footer>
+
+    <!-- Fixed link to return to the top of the page -->
+    <a href="#top" class="back-to-top redbutton btn fw-bold px-3 py-2 rounded-5 text-decoration-none" aria-label="Back to top">Back to top</a>
+
+   <!-- =========================================== -->
+
+</body>
+</html>

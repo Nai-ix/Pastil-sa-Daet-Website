@@ -6,6 +6,15 @@ body{
   font-weight: 400;
   font-style: normal;
 }
+html{
+  scroll-behavior: smooth;
+}
+.back-to-top{
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1030;
+}
 .redbutton{
   box-shadow: inset 0px 20px 40px 0px  #F05252;
   border: 1.2px solid #FFFFFF;
@@ -49,6 +58,20 @@ body{
 
 .greenbutton.add:hover{
   box-shadow: 0px 1px 10px 0px #111827;
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #111827;
+}
+
+.whitebutton{
+  box-shadow: inset  0px 15px 30px 0px #FFFFFF;
+  border: 1.2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  color: #111827;
+}
+
+
+.whitebutton.add:hover{
+  box-shadow: 0px 1px 10px 0px #E3FBB3;
   background-color: rgba(255, 255, 255, 0.16);
   color: #111827;
 }
@@ -106,6 +129,11 @@ li{
   margin-right:20px;
   opacity: 0.10;
   border-width: 2px;
+}
+
+.border-grey-input{
+  border-color: #000000;
+  
 }
 
 .bg-whitegreen{
@@ -261,5 +289,11 @@ img.icon{
 }
 
 
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{
+    scroll-behavior: auto;
+  }
 }
 
