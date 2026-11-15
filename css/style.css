@@ -30,6 +30,14 @@ html{
   color: #111827;
 }
 
+.redbutton:disabled{
+  opacity: 1;
+  border-color: #FFFFFF;
+  background-color: #b91c1c;
+  box-shadow: inset 0px 20px 40px 0px #F05252;
+  color: #FFFFFF;
+}
+
 .greenbutton.vfmenu{
   box-shadow: inset 0px 30px 40px 0px  #FFFFFF;
   border:1.5px solid #12172680;
@@ -105,6 +113,18 @@ html{
   border: 1.5px solid #6B7280;
   border-radius: 0.625rem;
   font-size: 0.9375rem;
+}
+
+#contact-consent.form-check-input{
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 1.5px solid #6B7280;
+  cursor: pointer;
+}
+
+#contact-consent.form-check-input:checked{
+  border-color: #b91c1c;
+  background-color: #b91c1c;
 }
 
 .service-choice{

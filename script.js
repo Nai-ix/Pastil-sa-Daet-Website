@@ -72,3 +72,20 @@ if (backToTop) {
 
     updateBackToTopVisibility();
 }
+
+const contactForm = document.querySelector("#contact-form");
+
+if (contactForm instanceof HTMLFormElement) {
+    const contactFormStatus = contactForm.querySelector("#contact-form-status");
+
+    if (!(contactFormStatus instanceof HTMLElement)) {
+        throw new Error("Contact form status element is missing.");
+    }
+
+    contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        contactFormStatus.textContent =
+            "Your message was not sent. The contact service is not connected yet.";
+        contactFormStatus.hidden = false;
+    });
+}
