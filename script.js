@@ -89,3 +89,33 @@ if (contactForm instanceof HTMLFormElement) {
         contactFormStatus.hidden = false;
     });
 }
+
+const signinPassword = document.querySelector("#signin-password");
+const signinPasswordToggle = document.querySelector("#signin-password-toggle");
+
+if (signinPassword instanceof HTMLInputElement && signinPasswordToggle instanceof HTMLButtonElement) {
+    signinPasswordToggle.addEventListener("click", () => {
+        const shouldShowPassword = signinPassword.type === "password";
+        signinPassword.type = shouldShowPassword ? "text" : "password";
+        signinPasswordToggle.textContent = shouldShowPassword ? "Hide" : "Show";
+        signinPasswordToggle.setAttribute("aria-label", shouldShowPassword ? "Hide password" : "Show password");
+        signinPasswordToggle.setAttribute("aria-pressed", String(shouldShowPassword));
+    });
+}
+
+const signinForm = document.querySelector("#signin-form");
+
+if (signinForm instanceof HTMLFormElement) {
+    const signinStatus = signinForm.querySelector("#signin-status");
+
+    if (!(signinStatus instanceof HTMLElement)) {
+        throw new Error("Sign-in form status element is missing.");
+    }
+
+    signinForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        signinStatus.textContent =
+            "Sign-in is not connected yet. Your account details were not sent.";
+        signinStatus.hidden = false;
+    });
+}

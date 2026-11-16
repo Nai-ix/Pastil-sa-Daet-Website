@@ -179,6 +179,234 @@ html{
   line-height: 1.5;
 }
 
+.signin-section{
+  display: flex;
+  align-items: center;
+  min-height: 26rem;
+  padding: 3rem 0;
+  background-color: #F7FEE7;
+  font-family: Arial, sans-serif;
+}
+
+.signin-intro{
+  max-width: 31rem;
+}
+
+.signin-badge{
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 0.35rem;
+  background-color: #A3E635;
+  color: #111827;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.signin-intro h1{
+  margin-bottom: 0.75rem;
+  color: #111827;
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 700;
+}
+
+.signin-description{
+  margin-bottom: 1rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.signin-benefits{
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  color: #111827;
+  list-style: none;
+}
+
+.signin-benefits li{
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  line-height: 1.4;
+}
+
+.signin-benefit-icon{
+  flex: 0 0 1rem;
+  margin-top: 0.2rem;
+}
+
+.signin-card{
+  width: 100%;
+
+  padding: 1.5rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0.5rem 1.5rem rgba(17, 24, 39, 0.08);
+}
+
+.signin-card h2{
+  margin-bottom: 0.25rem;
+  color: #111827;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.signin-card-description{
+  margin-bottom: 0.75rem;
+  color: #4B5563;
+  font-size: 0.875rem;
+}
+
+.signin-card .form-label{
+  color: #111827;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.signin-control,
+.signin-password-control{
+  min-height: 2.65rem;
+  border: 1px solid #6B7280;
+  border-radius: 0.55rem;
+  font-size: 0.875rem;
+}
+
+.signin-control{
+  padding: 0.55rem 0.7rem;
+}
+
+.signin-password-control{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.signin-password-control:focus-within{
+  border-color: #5C7A22;
+  outline: 0.15rem solid rgba(163, 230, 53, 0.4);
+}
+
+.signin-password-control .form-control{
+  min-width: 0;
+  min-height: 2.5rem;
+  padding: 0.55rem 0.7rem;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 0.875rem;
+}
+
+.signin-password-toggle{
+  align-self: stretch;
+  padding: 0 0.65rem;
+  border: 0;
+  background: #FFFFFF;
+  color: #374151;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.signin-password-toggle:focus-visible{
+  outline: 0.15rem solid #5C7A22;
+  outline-offset: -0.2rem;
+}
+
+.signin-text-link{
+  color: #991B1B;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.15rem;
+}
+
+.signin-text-link:hover{
+  color: #7F1D1D;
+}
+
+.signin-remember{
+  margin: 0.65rem 0 0.85rem;
+  color: #4B5563;
+  font-size: 0.8rem;
+}
+
+.signin-remember .form-check-input{
+  border-color: #6B7280;
+}
+
+.signin-remember .form-check-input:checked{
+  border-color: #5C7A22;
+  background-color: #5C7A22;
+}
+
+.signin-submit,
+.signin-guest{
+  display: flex;
+  min-height: 2.65rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.signin-submit{
+  border: 1px solid #E53E3E;
+  background: linear-gradient(#F05252, #B91C1C);
+  box-shadow: 0 0.3rem 0.7rem rgba(185, 28, 28, 0.2);
+  color: #FFFFFF;
+}
+
+.signin-submit:hover{
+  background: linear-gradient(#B91C1C, #991B1B);
+}
+
+.signin-guest{
+  margin-top: 0.65rem;
+  border: 1px solid #6B7280;
+  background: linear-gradient(#FFFFFF, #F7FEE7);
+  color: #111827;
+}
+
+.signin-guest:hover{
+  border-color: #5C7A22;
+  background: #EDF5E0;
+  color: #111827;
+}
+
+.signin-status{
+  margin: 0.65rem 0 0;
+  color: #7F1D1D;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.signin-secondary-link{
+  margin: 0.75rem 0 0;
+  color: #4B5563;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.signin-staff-link{
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 575.98px){
+  .signin-section{
+    padding: 2rem 0;
+  }
+
+  .signin-card{
+    padding: 1.25rem;
+  }
+}
+
 .greenbutton:hover{
   box-shadow: 0px 1px 10px 0px #FFFFFF;
   background-color: rgba(255, 255, 255, 0.16);

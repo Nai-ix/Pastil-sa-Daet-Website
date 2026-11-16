@@ -104,7 +104,7 @@
                                 <span class="material-symbols-outlined search-icon">search</span>
                                 <input class="form-control search-input " type="search" placeholder="Search" aria-label="Search menu, orders, or help...">
                             </form>
-                            <a href="#" class="nav-link sign-in-btn text-nowrap text-black btn fw-bold my-lg-0 my-2 px-3 py-1 rounded-5 text-decoration-none ">Sign-in</a>
+                            <a href="index.html" class="nav-link sign-in-btn text-nowrap text-black btn fw-bold my-lg-0 my-2 px-3 py-1 rounded-5 text-decoration-none ">Sign-in</a>
                             <a href="#" class="redbutton myorder-btn text-nowrap btn fw-bold px-4 py-1 rounded-5 text-decoration-none  ">My Orders</a>
 
                        </div>
@@ -120,9 +120,92 @@
         </nav>
     </header>
 
-    <!-- Menu page content -->
+    <!-- Sign-in page content -->
     <main>
-        
+        <section class="signin-section" aria-labelledby="signin-title">
+            <div class="container">
+                <div class="row align-items-start justify-content-center g-4">
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <div class="signin-intro">
+                            <span class="signin-badge">● Pastil sa Daet</span>
+                            <h1 id="signin-title">Welcome back.</h1>
+                            <p class="signin-description">Sign in to order ahead, keep your details, and skip the wait.</p>
+                            <ul class="signin-benefits">
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">Order ahead and pick up when it suits you</li>
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">Keep your details for faster checkout</li>
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">See today's bundle first</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <form class="signin-card" id="signin-form" aria-labelledby="signin-card-title">
+                            <h2 id="signin-card-title">Sign in</h2>
+                            <p class="signin-card-description">Use your email or mobile number.</p>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="signin-identity">Email or mobile number</label>
+                                <input
+                                    class="form-control signin-control"
+                                    type="text"
+                                    id="signin-identity"
+                                    name="identity"
+                                    placeholder="you@example.com"
+                                    autocomplete="username"
+                                    required>
+                            </div>
+
+                            <div class="mb-2">
+                                <div class="d-flex justify-content-between align-items-center gap-2">
+                                    <label class="form-label mb-1" for="signin-password">Password</label>
+                                    <a class="signin-text-link" href="#">Forgot password?</a>
+                                </div>
+                                <div class="signin-password-control">
+                                    <input
+                                        class="form-control"
+                                        type="password"
+                                        id="signin-password"
+                                        name="password"
+                                        placeholder="Enter your password"
+                                        autocomplete="current-password"
+                                        required>
+                                    <button
+                                        class="signin-password-toggle"
+                                        type="button"
+                                        id="signin-password-toggle"
+                                        aria-label="Show password"
+                                        aria-pressed="false">Show</button>
+                                </div>
+                            </div>
+
+                            <div class="form-check signin-remember">
+                                <input class="form-check-input" type="checkbox" id="signin-remember" name="remember">
+                                <label class="form-check-label" for="signin-remember">Keep me signed in</label>
+                            </div>
+
+                            <button class="signin-submit" type="submit">Sign in</button>
+                            <p class="signin-status" id="signin-status" role="status" aria-live="polite" hidden></p>
+                            <a class="signin-guest" href="home.html">Continue as guest</a>
+                            <p class="signin-secondary-link">New to Pastil sa Daet? <a class="signin-text-link" href="#">Create account</a></p>
+                            <p class="signin-secondary-link signin-staff-link">Staff? <a class="signin-text-link" href="#">Admin sign in</a></p>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-5 d-block d-lg-none">
+                        <div class="signin-intro">
+                            <span class="signin-badge">● Pastil sa Daet</span>
+                            <h1 id="signin-title">Welcome back.</h1>
+                            <p class="signin-description">Sign in to order ahead, keep your details, and skip the wait.</p>
+                            <ul class="signin-benefits">
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">Order ahead and pick up when it suits you</li>
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">Keep your details for faster checkout</li>
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">See today's bundle first</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Site footer -->
