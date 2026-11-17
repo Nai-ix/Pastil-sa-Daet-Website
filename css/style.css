@@ -465,11 +465,11 @@ h1.hero-title{
 }
 
 
-a{
+.footer-link{
   text-decoration: none;
 }
 
-li{
+footer li{
   list-style-type: none;
 }
 .footer-link.active{
@@ -533,9 +533,7 @@ iframe.visit-us-map{
 }
 
 .card.occupied{
-  width: 100%;
   min-height: clamp(337.4px, 35.04vh, 350.4px);
-
 }
 
 .card-img-top{
@@ -557,7 +555,7 @@ iframe.visit-us-map{
   gap: 0.75rem;
 }
 
-.nav-link{
+.navbar .nav-link{
   box-shadow: inset 0px 20px 30px 0px  #DCF9A456, 0px 5px 10px 0px  #11182725;
   border: 1.2px solid #96999F95;
   background-color: #E4FBBA73;
@@ -567,7 +565,7 @@ iframe.visit-us-map{
 }
 
 
-.nav-link.sign-in-btn{
+.navbar .nav-link.sign-in-btn{
   box-shadow: inset 0px 20px 30px 0px  #DCF9A456, 0px 5px 10px 0px  #11182725;
   border: 1.2px solid #96999F95;
   background-color: #E4FBBA73;
@@ -575,14 +573,14 @@ iframe.visit-us-map{
   margin:0px;
 }
 
-.nav-link:hover{
+.navbar .nav-link:hover{
   box-shadow: inset 0px 10px 20px 0px  #A3E635F2,  0px 10px 20px 0px  #64a30d67;
   border: 1.2px solid #96999F95;
   background-color: #D9F99DA6;
   border-radius: 30px;
 }
 
-.nav-link.active{
+.navbar .nav-link.active{
   box-shadow: inset 0px 10px 20px 0px  #A3E635F2, 0px 10px 20px 0px  #64a30d67;
   border: 1.2px solid #96999F95;
   background-color: #D9F99DA6;
