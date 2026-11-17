@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account | Pastil sa Daet</title>
+
+    <!-- External fonts and icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+
+    <!-- Bootstrap framework and page scripts -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/bootstrap-custom-prefixed.css">
+
+    <!-- Shared site styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+<body id="top">
+    
+    <!-- Site header and responsive navigation -->
+    <header class="bg-white shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <!-- Brand logo and name -->
+                <a class="navbar-brand text-dark fw-bold me-xl-5" href="index.html">
+                    <img src="image/icon.jpg" alt="Logo" class="me-2 icon d-inline-block align-text-center ">Pastil sa Daet</a>
+
+                <!-- Compact search shown beside the brand on mobile. -->
+                <form class="search-bar mobile-header-search d-lg-none" role="search">
+                    <span class="material-symbols-outlined search-icon">search</span>
+                    <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search menu">
+                </form>
+
+                <!-- Mobile menu toggle -->
+                <button class="navbar-toggler shadow-none border border-2 border-dark"
+                type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar" 
+                aria-controls="offcanvasNavbar" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Offcanvas navigation panel -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                
+                    <!-- Offcanvas header with brand, mobile search, and close control -->
+                    <div class="offcanvas-header border-bottom mx-3 p-0">
+                        <a class="navbar-brand fs-3 text-dark fw-bold" href="#">
+                        <img src="image/icon.jpg" alt="Logo" width="50" height="50" 
+                        class="d-inline-block align-text-center">Pastil sa Daet</a>
+
+                        <!-- Mobile search -->
+                        <form class="search-bar off-can me-lg-3 ">
+                            <span class="material-symbols-outlined search-icon">search</span>
+                            <input class="form-control search-input " type="search" placeholder="Search" aria-label="Search">
+                        </form>
+
+                        <!-- Close the offcanvas panel -->
+                        <button type="button" class="btn-close border border-2 border-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                    </div>
+
+                    
+
+                    <!-- Offcanvas navigation and account actions -->
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row px-xxl-5 pb-5 pb-lg-0">
+
+                        <!-- Mobile-only page indicator -->
+                         <div class="d-lg-none d-flex justify-content-between align-items-center mb-3">
+                            <h1 id="offcanvasNavbarLabel" class="fw-bold">Navigation</h1>
+                            <p class="my-2 text-grey">You're on Menu &amp; Order</p>
+                        </div>
+
+                        <!-- Main page navigation -->
+                        <ul class="navbar-nav justify-content-center align-items-stretch">
+                            <li class="nav-item d-flex flex-column">
+                                <a class="nav-link text-nowrap my-lg-0 my-2 px-3 py-1 btn text-dark fw-bold" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn  text-grey" aria-current="page" href="menu.html">Menu &amp; Order</a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn  text-grey" href="about.html">About us</a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn active text-grey" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                        <hr class="d-block d-lg-none">
+                        <!-- Search, sign-in, and order links -->
+                        <div class="d-flex gap-lg-3 flex-lg-row flex-column ms-xxl-5 ">
+
+                            <!-- Desktop search -->
+                            <form class="search-bar d-none d-lg-flex" role="search">
+                                <span class="material-symbols-outlined search-icon">search</span>
+                                <input class="form-control search-input " type="search" placeholder="Search" aria-label="Search menu, orders, or help...">
+                            </form>
+                            <a href="index.html" class="nav-link sign-in-btn text-nowrap text-black btn fw-bold my-lg-0 my-2 px-3 py-1 rounded-5 text-decoration-none ">Sign-in</a>
+                            <a href="#" class="redbutton myorder-btn text-nowrap btn fw-bold px-4 py-1 rounded-5 text-decoration-none  ">My Orders</a>
+
+                       </div>
+
+                        <!-- Mobile-only service note -->
+                        <div class="d-lg-none d-flex flex-column justify-content-center align-items-center mt-auto">
+                            <img src="image/redpill.png" alt="redpill" width="35" height="7">
+                            <p class="my-2 text-grey">Serving Daet since 2023.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Create account page content -->
+    <main>
+        <section class="signin-section" aria-labelledby="create-account-title">
+            <div class="container">
+                <div class="row align-items-start justify-content-center g-4">
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <div class="signin-intro">
+                            <span class="signin-badge">● Pastil sa Daet</span>
+                            <h1 id="create-account-title">Create your account.</h1>
+                            <p class="signin-description">It only takes a minute. Then ordering ahead is just a few taps.</p>
+                            <ul class="signin-benefits">
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">Order ahead and pick up when it suits you</li>
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">Keep your details for faster checkout</li>
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">See today's bundle first</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <form class="signin-card" id="create-account-form" aria-labelledby="create-account-card-title">
+                            <h2 id="create-account-card-title">Create account</h2>
+                            <p class="signin-card-description">All fields are required.</p>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="create-account-name">Full name</label>
+                                <input
+                                    class="form-control signin-control"
+                                    type="text"
+                                    id="create-account-name"
+                                    name="fullName"
+                                    placeholder="Your full name"
+                                    autocomplete="name"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="create-account-identity">Email or mobile number</label>
+                                <input
+                                    class="form-control signin-control"
+                                    type="text"
+                                    id="create-account-identity"
+                                    name="identity"
+                                    placeholder="you@example.com"
+                                    autocomplete="username"
+                                    required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="form-label mb-1" for="create-account-password">Password</label>
+                                <div class="signin-password-control">
+                                    <input
+                                        class="form-control"
+                                        type="password"
+                                        id="create-account-password"
+                                        name="password"
+                                        placeholder="Create a password"
+                                        autocomplete="new-password"
+                                        required>
+                                    <button
+                                        class="signin-password-toggle"
+                                        type="button"
+                                        id="create-account-password-toggle"
+                                        data-password-target="create-account-password"
+                                        aria-label="Show password"
+                                        aria-pressed="false">Show</button>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label mb-1" for="create-account-confirm-password">Confirm password</label>
+                                <div class="signin-password-control">
+                                    <input
+                                        class="form-control"
+                                        type="password"
+                                        id="create-account-confirm-password"
+                                        name="confirmPassword"
+                                        placeholder="Re-enter your password"
+                                        autocomplete="new-password"
+                                        required>
+                                    <button
+                                        class="signin-password-toggle"
+                                        type="button"
+                                        id="create-account-confirm-password-toggle"
+                                        data-password-target="create-account-confirm-password"
+                                        aria-label="Show confirm password"
+                                        aria-pressed="false">Show</button>
+                                </div>
+                            </div>
+
+                            <button class="signin-submit" type="submit">Create account</button>
+                            <p class="signin-status" id="create-account-status" role="status" aria-live="polite" hidden></p>
+                            <p class="signin-secondary-link">Already have an account? <a class="signin-text-link" href="index.html">Sign in</a></p>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-5 d-block d-lg-none">
+                        <div class="signin-intro">
+                            <span class="signin-badge">● Pastil sa Daet</span>
+                            <h1 id="create-account-title-mobile">Create your account.</h1>
+                            <p class="signin-description">It only takes a minute. Then ordering ahead is just a few taps.</p>
+                            <ul class="signin-benefits">
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">Order ahead and pick up when it suits you</li>
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">Keep your details for faster checkout</li>
+                                <li><img class="signin-benefit-icon" src="image/circle.png" alt="" width="16" height="16">See today's bundle first</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="bg-dark py-4">
+        <div class="container-fluid ">
+            <div class="row px-lg-5">
+                <!-- Footer brand and service note -->
+                <div class="col-lg-9">
+                    <h5 class="text-white">
+                        <img src="image/icon.jpg" alt="Icon" height="40" width="40" class="rounded-circle">
+                        Pastil sa Daet
+                    </h5>
+                    <p class="text-grey">Serving students in Daet since 2023.</p>
+                </div>
+                <!-- Footer navigation links -->
+                <div class="col-lg-3">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <ul class="col-6">
+                                <li><p class="text-primary m-0 fw-bold">Explore</p></li>
+                                <li><a href="index.html" class="footer-link text-grey">Home</a></li>
+                                <li><a href="menu.html" class="footer-link text-grey">Menu & Order</a></li>
+                                <li><a href="about.html" class="footer-link text-grey">About us</a></li>
+                                <li><a href="contact.html" class="footer-link text-grey">News & Promos</a></li>
+                            </ul>
+                            <ul class="col-6">
+                                <li><p class="text-primary m-0 fw-bold">Help</p></li>
+                                <li><a href="#" class="footer-link text-grey">Contact</a></li>
+                                <li><a href="#" class="footer-link text-grey">FAQ</a></li>
+                                <li><a href="#" class="footer-link text-grey">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Copyright notice -->
+                <hr class="text-white mt-2">
+                <div class="col-lg-12" ><p class="text-grey fw-light">© 2026 Pastil sa Daet. All rights reserved.</p></div>
+            </div>
+        </div>
+   </footer>
+
+    <!-- Fixed link to return to the top of the page -->
+    <a href="#top" class="back-to-top redbutton btn fw-bold px-3 py-2 rounded-5 text-decoration-none" aria-label="Back to top">Back to top</a>
+
+   <!-- =========================================== -->
+
+</body>
+</html>

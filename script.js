@@ -90,18 +90,28 @@ if (contactForm instanceof HTMLFormElement) {
     });
 }
 
-const signinPassword = document.querySelector("#signin-password");
-const signinPasswordToggle = document.querySelector("#signin-password-toggle");
+const passwordToggles = document.querySelectorAll(".signin-password-toggle[data-password-target]");
 
-if (signinPassword instanceof HTMLInputElement && signinPasswordToggle instanceof HTMLButtonElement) {
-    signinPasswordToggle.addEventListener("click", () => {
-        const shouldShowPassword = signinPassword.type === "password";
-        signinPassword.type = shouldShowPassword ? "text" : "password";
-        signinPasswordToggle.textContent = shouldShowPassword ? "Hide" : "Show";
-        signinPasswordToggle.setAttribute("aria-label", shouldShowPassword ? "Hide password" : "Show password");
-        signinPasswordToggle.setAttribute("aria-pressed", String(shouldShowPassword));
+passwordToggles.forEach((toggle) => {
+    if (!(toggle instanceof HTMLButtonElement)) {
+        return;
+    }
+
+    const targetId = toggle.dataset.passwordTarget;
+    const passwordInput = targetId ? document.getElementById(targetId) : null;
+
+    if (!(passwordInput instanceof HTMLInputElement)) {
+        throw new Error("Password toggle target is missing or is not an input.");
+    }
+
+    toggle.addEventListener("click", () => {
+        const shouldShowPassword = passwordInput.type === "password";
+        passwordInput.type = shouldShowPassword ? "text" : "password";
+        toggle.textContent = shouldShowPassword ? "Hide" : "Show";
+        toggle.setAttribute("aria-label", shouldShowPassword ? "Hide password" : "Show password");
+        toggle.setAttribute("aria-pressed", String(shouldShowPassword));
     });
-}
+});
 
 const signinForm = document.querySelector("#signin-form");
 
@@ -117,5 +127,37 @@ if (signinForm instanceof HTMLFormElement) {
         signinStatus.textContent =
             "Sign-in is not connected yet. Your account details were not sent.";
         signinStatus.hidden = false;
+    });
+}
+
+const createAccountForm = document.querySelector("#create-account-form");
+
+if (createAccountForm instanceof HTMLFormElement) {
+    const createAccountStatus = createAccountForm.querySelector("#create-account-status");
+    const accountPassword = createAccountForm.querySelector("#create-account-password");
+    const confirmPassword = createAccountForm.querySelector("#create-account-confirm-password");
+
+    if (!(createAccountStatus instanceof HTMLElement)) {
+        throw new Error("Create account form status element is missing.");
+    }
+
+    if (!(accountPassword instanceof HTMLInputElement) || !(confirmPassword instanceof HTMLInputElement)) {
+        throw new Error("Create account password fields are missing.");
+    }
+
+    const validatePasswordMatch = () => {
+        const passwordsMatch =
+            !confirmPassword.value || confirmPassword.value === accountPassword.value;
+        confirmPassword.setCustomValidity(passwordsMatch ? "" : "Passwords do not match.");
+    };
+
+    accountPassword.addEventListener("input", validatePasswordMatch);
+    confirmPassword.addEventListener("input", validatePasswordMatch);
+
+    createAccountForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        createAccountStatus.textContent =
+            "Account creation is not connected yet. Your details were not sent.";
+        createAccountStatus.hidden = false;
     });
 }
