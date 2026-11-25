@@ -48,7 +48,7 @@
                 </button>
 
                 <!-- Offcanvas navigation panel -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvas-nav-title">
                 
                     <!-- Offcanvas header with brand, mobile search, and close control -->
                     <div class="offcanvas-header border-bottom mx-xxl-3 mx-lg-0 p-0">
@@ -74,7 +74,7 @@
 
                         <!-- Mobile-only page indicator -->
                          <div class="d-lg-none d-flex justify-content-between align-items-center mb-3">
-                            <h1 id="offcanvasNavbarLabel" class="fw-bold">Navigation</h1>
+                            <h1 id="offcanvas-nav-title" class="fw-bold">Navigation</h1>
                             <p class="my-2 text-grey">You're on Home</p>
                         </div>
 
@@ -336,7 +336,7 @@
                                 <p class="card-text text-grey m-0">Services</p>
                                 <p class="card-text ">Dine-in · Take-out · Delivery through partner apps</p>
                                 <div class="card-button d-flex flex-column" id="delivery-apps">
-                                    <a href="#" class="greenbutton vfmenu btn fw-bold px-4 py-2 m-2 rounded-5 text-decoration-none  ">Get directions</a>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=14.109057498396417,122.9557893481202" class="greenbutton vfmenu btn fw-bold px-4 py-2 m-2 rounded-5 text-decoration-none" target="_blank" rel="noopener noreferrer">Get directions</a>
                                     <a href="#" class="greenbutton vfmenu btn fw-bold px-4 py-2 m-2 rounded-5 text-decoration-none  ">Order on [Delivery partner 1]</a>
                                     <a href="#" class="greenbutton vfmenu btn fw-bold px-4 py-2 m-2 rounded-5 text-decoration-none  ">Order on [Delivery partner 2]</a>
                                 </div>
@@ -353,7 +353,7 @@
         </section>
 
         <!-- Frequently asked questions -->
-        <section class="py-5">
+        <section class="py-5" id="faq">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 px-5">
@@ -380,7 +380,7 @@
                                 </h2>
                                 <div id="faq-two" class="accordion-collapse collapse" aria-labelledby="faq-heading-two">
                                 <div class="accordion-body text-grey">
-                                    Yes
+                                    Yes. We offer delivery through our partner delivery apps. You can also order ahead for pick-up or dine in at our shop.
                                 </div>
                                 </div>
                             </div>
@@ -393,7 +393,7 @@
                                 </h2>
                                 <div id="faq-three" class="accordion-collapse collapse" aria-labelledby="faq-heading-three">
                                 <div class="accordion-body text-grey">
-                                    Di ko rin alam, ikaw alam mo?    
+                                    The daily bundle is our everyday promo meal deal. Ask our staff for today's bundle inclusions or check the Menu &amp; Order page for the latest offer.
                                 </div>
                                 </div>
                             </div>
@@ -431,8 +431,8 @@
                             </ul>
                             <ul class="col-6">
                                 <li><p class="text-primary m-0 fw-bold">Help</p></li>
-                                <li><a href="#" class="footer-link text-grey">Contact</a></li>
-                                <li><a href="#" class="footer-link text-grey">FAQ</a></li>
+                                <li><a href="contact.html" class="footer-link text-grey">Contact</a></li>
+                                <li><a href="#faq" class="footer-link text-grey">FAQ</a></li>
                                 <li><a href="#" class="footer-link text-grey">Privacy Policy</a></li>
                             </ul>
                         </div>
