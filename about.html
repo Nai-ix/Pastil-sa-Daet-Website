@@ -24,91 +24,73 @@
 </head>
 <body id="top">
     
-    <!-- Site header and responsive navigation -->
     <header class="bg-white shadow-sm sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <!-- Brand logo and name -->
                 <a class="navbar-brand text-dark fw-bold me-xl-5" href="home.html">
-                    <img src="image/icon.jpg" alt="Logo" class="me-2 icon d-inline-block align-text-center ">Pastil sa Daet</a>
+                    <img src="image/icon.jpg" alt="Logo" class="me-2 icon d-inline-block align-text-center">Pastil sa Daet
+                </a>
 
-                <!-- Compact search shown beside the brand on mobile. -->
                 <form class="search-bar mobile-header-search d-lg-none" role="search">
                     <span class="material-symbols-outlined search-icon">search</span>
                     <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search menu">
                 </form>
 
-                <!-- Mobile menu toggle -->
                 <button class="navbar-toggler shadow-none border border-2 border-dark"
-                type="button" data-bs-toggle="offcanvas" 
-                data-bs-target="#offcanvasNavbar" 
-                aria-controls="offcanvasNavbar" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Offcanvas navigation panel -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                
-                    <!-- Offcanvas header with brand, mobile search, and close control -->
                     <div class="offcanvas-header border-bottom mx-3 p-0">
                         <a class="navbar-brand fs-3 text-dark fw-bold" href="home.html">
-                        <img src="image/icon.jpg" alt="Logo" width="50" height="50" 
-                        class="d-inline-block align-text-center">Pastil sa Daet</a>
+                            <img src="image/icon.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">Pastil sa Daet
+                        </a>
 
-                        <!-- Mobile search -->
-                        <form class="search-bar off-can me-lg-3 ">
+                        <form class="search-bar off-can me-lg-3">
                             <span class="material-symbols-outlined search-icon">search</span>
-                            <input class="form-control search-input " type="search" placeholder="Search" aria-label="Search">
+                            <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
                         </form>
 
-                        <!-- Close the offcanvas panel -->
                         <button type="button" class="btn-close border border-2 border-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
                     </div>
 
-                    
-
-                    <!-- Offcanvas navigation and account actions -->
                     <div class="offcanvas-body d-flex flex-column flex-lg-row px-xxl-5 pb-5 pb-lg-0">
-
-                        <!-- Mobile-only page indicator -->
-                         <div class="d-lg-none d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-lg-none d-flex justify-content-between align-items-center mb-3">
                             <h1 id="offcanvasNavbarLabel" class="fw-bold">Navigation</h1>
                             <p class="my-2 text-grey">You're on About us</p>
                         </div>
 
-                        <!-- Main page navigation -->
                         <ul class="navbar-nav justify-content-center align-items-stretch">
                             <li class="nav-item d-flex flex-column">
                                 <a class="nav-link text-nowrap my-lg-0 my-2 px-3 py-1 btn text-dark fw-bold" href="home.html">Home</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn  text-grey" aria-current="page" href="menu.html">Menu &amp; Order</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn text-grey" href="menu.html">Menu &amp; Order</a>
                             </li>
-                            <li class="nav-item  ">
-                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn active text-grey" href="about.html">About us</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn text-grey active" aria-current="page" href="about.html">About us</a>
                             </li>
-                            <li class="nav-item  ">
+                            <li class="nav-item">
                                 <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn text-grey" href="contact.html">Contact</a>
                             </li>
                         </ul>
 
                         <hr class="d-block d-lg-none">
-                        <!-- Search, sign-in, and order links -->
-                        <div class="d-flex gap-lg-3 flex-lg-row flex-column ms-xxl-5 ">
 
-                            <!-- Desktop search -->
+                        <div class="d-flex gap-lg-3 flex-lg-row flex-column ms-xxl-5">
                             <form class="search-bar d-none d-lg-flex" role="search">
                                 <span class="material-symbols-outlined search-icon">search</span>
-                                <input class="form-control search-input " type="search" placeholder="Search" aria-label="Search menu, orders, or help...">
+                                <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search menu, orders, or help...">
                             </form>
-                            <a href="index.html" class="nav-link sign-in-btn text-nowrap text-black btn fw-bold my-lg-0 my-2 px-3 py-1 rounded-5 text-decoration-none ">Sign-in</a>
-                            <a href="#" class="redbutton myorder-btn text-nowrap btn fw-bold px-4 py-1 rounded-5 text-decoration-none  ">My Orders</a>
 
-                       </div>
+                            <a href="index.html" class="nav-link sign-in-btn text-nowrap text-black btn fw-bold my-lg-0 my-2 px-3 py-1 rounded-5 text-decoration-none">Sign-in</a>
+                            <a href="#" class="redbutton myorder-btn text-nowrap btn fw-bold px-4 py-1 rounded-5 text-decoration-none">My Orders</a>
+                        </div>
 
-                        <!-- Mobile-only service note -->
                         <div class="d-lg-none d-flex flex-column justify-content-center align-items-center mt-auto">
                             <img src="image/redpill.png" alt="redpill" width="35" height="7">
                             <p class="my-2 text-grey">Serving Daet since 2023.</p>
@@ -270,11 +252,9 @@
         </section>
     </main>
 
-    <!-- Site footer -->
     <footer class="bg-dark py-4">
-        <div class="container-fluid ">
+        <div class="container-fluid">
             <div class="row px-lg-5">
-                <!-- Footer brand and service note -->
                 <div class="col-lg-9">
                     <h5 class="text-white">
                         <img src="image/icon.jpg" alt="Icon" height="40" width="40" class="rounded-circle">
@@ -282,16 +262,16 @@
                     </h5>
                     <p class="text-grey">Serving students in Daet since 2023.</p>
                 </div>
-                <!-- Footer navigation links -->
+
                 <div class="col-lg-3">
                     <div class="container-fluid">
                         <div class="row">
                             <ul class="col-6">
                                 <li><p class="text-primary m-0 fw-bold">Explore</p></li>
                                 <li><a href="home.html" class="footer-link text-grey">Home</a></li>
-                                <li><a href="menu.html" class="footer-link text-grey">Menu & Order</a></li>
+                                <li><a href="menu.html" class="footer-link text-grey">Menu &amp; Order</a></li>
                                 <li><a href="about.html" class="footer-link text-grey">About us</a></li>
-                                <li><a href="contact.html" class="footer-link text-grey">News & Promos</a></li>
+                                <li><a href="contact.html" class="footer-link text-grey">News &amp; Promos</a></li>
                             </ul>
                             <ul class="col-6">
                                 <li><p class="text-primary m-0 fw-bold">Help</p></li>
@@ -301,16 +281,16 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
-                <!-- Copyright notice -->
+
                 <hr class="text-white mt-2">
-                <div class="col-lg-12" ><p class="text-grey fw-light">© 2026 Pastil sa Daet. All rights reserved.</p></div>
+                <div class="col-lg-12">
+                    <p class="text-grey fw-light">© 2026 Pastil sa Daet. All rights reserved.</p>
+                </div>
             </div>
         </div>
-   </footer>
+    </footer>
 
-    <!-- Fixed link to return to the top of the page -->
     <a href="#top" class="back-to-top redbutton btn fw-bold px-3 py-2 rounded-5 text-decoration-none" aria-label="Back to top">Back to top</a>
 
    <!-- =========================================== -->
