@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastil sa Daet | My Orders</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/bootstrap-custom-prefixed.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+    <header class="bg-white shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand text-dark fw-bold me-xl-5" href="index.html">
+                    <img src="image/icon.jpg" alt="Pastil sa Daet logo" class="me-2 icon d-inline-block align-text-center">Pastil sa Daet
+                </a>
+
+                <form class="search-bar mobile-header-search d-lg-none" role="search">
+                    <span class="material-symbols-outlined search-icon">search</span>
+                    <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search menu">
+                </form>
+
+                <button class="navbar-toggler shadow-none border border-2 border-dark"
+                    type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header border-bottom mx-3 p-0">
+                        <a class="navbar-brand fs-3 text-dark fw-bold" href="index.html">
+                            <img src="image/icon.jpg" alt="Pastil sa Daet logo" width="50" height="50" class="d-inline-block align-text-center">Pastil sa Daet
+                        </a>
+                        <form class="search-bar off-can me-lg-3">
+                            <span class="material-symbols-outlined search-icon">search</span>
+                            <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                        <button type="button" class="btn-close border border-2 border-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row px-xxl-5 pb-5 pb-lg-0">
+                        <div class="d-lg-none d-flex justify-content-between align-items-center mb-3">
+                            <h1 id="offcanvasNavbarLabel" class="fw-bold">Navigation</h1>
+                            <p class="my-2 text-grey">You're on My Orders</p>
+                        </div>
+
+                        <ul class="navbar-nav justify-content-center align-items-stretch">
+                            <li class="nav-item d-flex flex-column">
+                                <a class="nav-link text-nowrap my-lg-0 my-2 px-3 py-1 btn text-dark fw-bold" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn text-grey" href="menu.html">Menu &amp; Order</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn text-grey" href="about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-nowrap my-lg-0 my-sm-2 px-3 py-1 btn text-grey" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                        <hr class="d-block d-lg-none">
+                        <div class="d-flex gap-lg-3 flex-lg-row flex-column ms-xxl-5">
+                            <form class="search-bar d-none d-lg-flex" role="search">
+                                <span class="material-symbols-outlined search-icon">search</span>
+                                <input class="form-control search-input" type="search" placeholder="Search menu, orders, or help..." aria-label="Search menu, orders, or help">
+                            </form>
+                            <a href="signin.html" class="nav-link sign-in-btn text-nowrap text-black btn fw-bold my-lg-0 my-2 px-3 py-1 rounded-5 text-decoration-none">Sign-in</a>
+                            <a href="myorders.html" class="redbutton myorder-btn text-nowrap btn fw-bold px-4 py-1 rounded-5 text-decoration-none" aria-current="page">My Orders</a>
+                        </div>
+
+                        <div class="d-lg-none d-flex flex-column justify-content-center align-items-center mt-auto">
+                            <img src="image/redpill.png" alt="" width="35" height="7">
+                            <p class="my-2 text-grey">Serving Daet since 2023.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="my-orders-page">
+
+        <section class="bg-warning py-4">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-primary fw-bold">My Orders</h1>
+                    <p class="text-primary">Track your orders and see what you ordered.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-4">
+            <div class="container">
+                <fieldset class="mb-3">
+                    <legend class="visually-hidden">Filter orders by status</legend>
+                    <div class="d-flex flex-wrap gap-2" role="group" aria-label="Order status filters">
+                        <input class="btn-check" type="radio" name="order-status" id="orders-all" value="all" autocomplete="off" checked>
+                        <label class="btn greenbutton-filter rounded-pill px-3 fw-bold" for="orders-all">All</label>
+
+                        <input class="btn-check" type="radio" name="order-status" id="orders-preparing" value="preparing" autocomplete="off">
+                        <label class="btn greenbutton-filter rounded-pill px-3 fw-bold" for="orders-preparing">Preparing</label>
+
+                        <input class="btn-check" type="radio" name="order-status" id="orders-ready" value="ready" autocomplete="off">
+                        <label class="btn greenbutton-filter rounded-pill px-3 fw-bold" for="orders-ready">Ready for pick-up</label>
+
+                        <input class="btn-check" type="radio" name="order-status" id="orders-completed" value="completed" autocomplete="off">
+                        <label class="btn greenbutton-filter rounded-pill px-3 fw-bold" for="orders-completed">Completed</label>
+
+                        <input class="btn-check" type="radio" name="order-status" id="orders-cancelled" value="cancelled" autocomplete="off">
+                        <label class="btn greenbutton-filter rounded-pill px-3 fw-bold" for="orders-cancelled">Cancelled</label>
+                    </div>
+                </fieldset>
+
+                <div class="row g-3" id="order-list">
+                    <div class="order-record col-12" data-order-status="preparing">
+                        <article class="card" id="order-PD-1046">
+                            <div class="card-body p-3 p-md-4">
+                                <div class="d-flex justify-content-between align-items-start gap-3 pb-3 border-bottom">
+                                    <div>
+                                        <h2 class="h5 fw-bold mb-1">Order #PD-1046</h2>
+                                        <p class="text-grey small mb-0">Today · placed 11:40 AM</p>
+                                    </div>
+                                    <span class="badge rounded-pill bg-secondary text-dark">Preparing</span>
+                                </div>
+
+                                <div class="row g-3 py-3">
+                                    <div class="col-6 col-lg-4">
+                                        <span class="d-block text-grey small">Items</span>
+                                        <span>Pastil × 2<br>Daily bundle × 1</span>
+                                    </div>
+                                    <div class="col-6 col-lg-2">
+                                        <span class="d-block text-grey small">Service</span>
+                                        <span>Take-out</span>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <span class="d-block text-grey small">Pick-up time</span>
+                                        <span>12:30 PM</span>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <span class="d-block text-grey small">Total</span>
+                                        <span class="fw-bold">₱127</span>
+                                    </div>
+                                </div>
+
+                                <div class="row g-2 mb-3" aria-label="Order progress">
+                                    <div class="col-6 col-lg-3"><div class="border rounded p-2 small bg-body-secondary">● Order placed</div></div>
+                                    <div class="col-6 col-lg-3"><div class="border border-dark rounded p-2 small bg-secondary text-dark fw-bold">● Preparing</div></div>
+                                    <div class="col-6 col-lg-3"><div class="border rounded p-2 small text-grey">● Ready for pick-up</div></div>
+                                    <div class="col-6 col-lg-3"><div class="border rounded p-2 small text-grey">● Picked up</div></div>
+                                </div>
+
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="#order-PD-1046" class="btn greenbutton vfmenu rounded-pill px-3">View details</a>
+                                    <a href="menu.html" class="btn greenbutton rounded-pill px-3">Order again</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="order-record col-12" data-order-status="completed">
+                        <article class="card" id="order-PD-1038">
+                            <div class="card-body p-3 p-md-4">
+                                <div class="d-flex justify-content-between align-items-start gap-3 pb-3 border-bottom">
+                                    <div>
+                                        <h2 class="h5 fw-bold mb-1">Order #PD-1038</h2>
+                                        <p class="text-grey small mb-0">Yesterday · 12:10 PM</p>
+                                    </div>
+                                    <span class="badge rounded-pill bg-body-secondary text-dark">Completed</span>
+                                </div>
+
+                                <div class="row g-3 py-3">
+                                    <div class="col-6 col-lg-4">
+                                        <span class="d-block text-grey small">Items</span>
+                                        <span>Pastil × 1</span>
+                                    </div>
+                                    <div class="col-6 col-lg-2">
+                                        <span class="d-block text-grey small">Service</span>
+                                        <span>Dine-in</span>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <span class="d-block text-grey small">Pick-up time</span>
+                                        <span>12:45 PM</span>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <span class="d-block text-grey small">Total</span>
+                                        <span class="fw-bold">₱29</span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="#order-PD-1038" class="btn greenbutton vfmenu rounded-pill px-3">View details</a>
+                                    <a href="menu.html" class="btn greenbutton rounded-pill px-3">Order again</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="order-record col-12" data-order-status="completed">
+                        <article class="card" id="order-PD-1031">
+                            <div class="card-body p-3 p-md-4">
+                                <div class="d-flex justify-content-between align-items-start gap-3 pb-3 border-bottom">
+                                    <div>
+                                        <h2 class="h5 fw-bold mb-1">Order #PD-1031</h2>
+                                        <p class="text-grey small mb-0">Mon, Oct 19 · 12:20 PM</p>
+                                    </div>
+                                    <span class="badge rounded-pill bg-body-secondary text-dark">Completed</span>
+                                </div>
+
+                                <div class="row g-3 py-3">
+                                    <div class="col-6 col-lg-4">
+                                        <span class="d-block text-grey small">Items</span>
+                                        <span>Daily bundle × 1</span>
+                                    </div>
+                                    <div class="col-6 col-lg-2">
+                                        <span class="d-block text-grey small">Service</span>
+                                        <span>Take-out</span>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <span class="d-block text-grey small">Pick-up time</span>
+                                        <span>1:00 PM</span>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <span class="d-block text-grey small">Total</span>
+                                        <span class="fw-bold">₱69</span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="#order-PD-1031" class="btn greenbutton vfmenu rounded-pill px-3">View details</a>
+                                    <a href="menu.html" class="btn greenbutton rounded-pill px-3">Order again</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <p id="orders-empty-state" class="col-12 text-center text-grey py-3" role="status" aria-live="polite" hidden>
+                        No orders are available in this status yet.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-3">
+            <div class="container">
+                <div class="bg-whitegreen rounded p-3 d-flex justify-content-between align-items-center gap-3">
+                    <div>
+                        <h2 class="h6 fw-bold mb-1">Question about an order?</h2>
+                        <p class="text-grey mb-0">Send us a message and we'll get back to you.</p>
+                    </div>
+                    <a href="contact.html" class="btn greenbutton vfmenu rounded-pill px-3 text-nowrap">Contact us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark py-4">
+        <div class="container-fluid">
+            <div class="row px-lg-5">
+                <div class="col-lg-9">
+                    <h5 class="text-white">
+                        <img src="image/icon.jpg" alt="Pastil sa Daet icon" height="40" width="40" class="rounded-circle">
+                        Pastil sa Daet
+                    </h5>
+                    <p class="text-grey">Serving students in Daet since 2023.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <ul class="col-6">
+                                <li><p class="text-primary m-0 fw-bold">Explore</p></li>
+                                <li><a href="index.html" class="footer-link text-grey">Home</a></li>
+                                <li><a href="menu.html" class="footer-link text-grey">Menu &amp; Order</a></li>
+                                <li><a href="about.html" class="footer-link text-grey">About us</a></li>
+                                <li><a href="contact.html" class="footer-link text-grey">Contact</a></li>
+                            </ul>
+                            <ul class="col-6">
+                                <li><p class="text-primary m-0 fw-bold">Help</p></li>
+                                <li><a href="contact.html" class="footer-link text-grey">Contact</a></li>
+                                <li><a href="#" class="footer-link text-grey">FAQ</a></li>
+                                <li><a href="#" class="footer-link text-grey">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-white mt-2">
+                <div class="col-lg-12"><p class="text-grey fw-light">© 2026 Pastil sa Daet. All rights reserved.</p></div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top redbutton btn fw-bold px-3 py-2 rounded-5 text-decoration-none d-none" aria-label="Back to top">Back to top</a>
+</body>
+</html>
